@@ -1,0 +1,83 @@
+﻿using HangManV2.Data;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace HangManV2.Context
+{
+    /// <summary>
+    /// This class handles oprations connected with ranking
+    /// </summary>
+     /// <param name="topUsers">A list of users.</param>
+    static class RankingContext
+    {
+        private static List<user> topUsers=new List<user>();
+        /// <summary>
+        /// The method returns a list of the top 10 users
+        /// </summary>
+        /// <returns>
+        ///  A list of the top 10 users
+        /// </returns>
+        /// <example>
+        /// <code>
+        ///  List<user> topPlayers = RankingContext.GetTopPlayersList();
+        /// </code>
+        /// </example>
+        public static List<user> GetTopPlayersList()
+        {
+            return topUsers;
+        }
+        /// <summary>
+        /// The method updates the list of top 10 players
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// RankingContext.Refresh();      
+        /// </code>
+        /// </example>
+        public static void Refresh()
+        {
+            using (var dbcontext = new UserContext())
+            {
+                var topTenPlayers = (from user in dbcontext.Users
+                                     orderby user.PointAmount descending
+                                     select user).Take(10).ToList();
+                topUsers = topTenPlayers;
+            }
+        }
+        /// <summary>
+        /// The method returns the position of the current player compared to everyone else
+        /// </summary>
+        /// <returns>
+        ///  the place of the current player
+        /// </returns>
+        /// <example>
+        /// <code>
+        /// List<user> topPlayers = RankingContext.GetTopPlayersList();
+        /// </code>
+        /// </example>
+        public static int GetPlayerPosition()
+        {
+            List<user> playersByPoints = new List<user>();
+            using (var dbcontext = new UserContext())
+            {
+                 playersByPoints = (from user in dbcontext.Users
+                                     orderby user.PointAmount descending
+                                     select user).ToList();
+            }
+            int counter = 0;
+            foreach (var item in playersByPoints)
+            {
+                counter++;
+                if (item.Id == CurrentUser.id)
+                {
+                    break;
+                }
+            }
+            return counter;
+        }
+    }
+}
