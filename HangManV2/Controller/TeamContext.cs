@@ -49,19 +49,36 @@ namespace HangManV2.Context
             }
             using (var dbcontext = new TeamContext())
             {
+                RemovePointsFromOldTeam();
                 team newTeam = new team();
                 newTeam.TeamName = ImputTeamName;
                 newTeam.TeamPointAmount = CurrentUser.poitAmount;
                 dbcontext.Teams.Add(newTeam);
                 dbcontext.SaveChanges();
                 CurrentUser.UpdateUserTeamInDB(newTeam.TeamId);
+                
             }
         }
-        private static List<team> GetListOfTeams()
+        private static void RemovePointsFromOldTeam()
+        {
+            if (CurrentUser.teamId != 1)
+            {
+                using (var dbcontext = new TeamContext())
+                {
+                    var oldTeam = dbcontext.Teams.Find(CurrentUser.teamId);
+                    var oldTeamUpdatedpoints = oldTeam;
+                    oldTeamUpdatedpoints.TeamPointAmount -= CurrentUser.poitAmount;
+                    dbcontext.Entry(oldTeam).CurrentValues.SetValues(oldTeamUpdatedpoints);
+                   // dbcontext.Teams.Add(newTeam);
+                    dbcontext.SaveChanges();
+                }
+            }
+        }
+        public static List<team> GetListOfTeams()
         {
             using (var dbcontext = new TeamContext())
             {
-                var listOfAllTeams = (from t in dbcontext.Teams select t).ToList();
+                var listOfAllTeams = (from t in dbcontext.Teams orderby t.TeamPointAmount descending select t).ToList();
                 return listOfAllTeams;
             }
         }
@@ -137,6 +154,24 @@ namespace HangManV2.Context
             }
             return counter.ToString();
         }
-
+        public static List<user> GetAllUsersInTeam()
+        {
+            List<user> playersByPoints = new List<user>();
+            using (var dbcontext = new UserContext())
+            {
+                playersByPoints = (from user in dbcontext.Users
+                                   where user.TeamId == CurrentUser.teamId
+                                   orderby user.PointAmount descending
+                                   select user).ToList();
+            }
+            return playersByPoints;
+        }
+        public static void CheckIfTeamDifferent(int teamId)
+        {
+            if (teamId == CurrentUser.teamId)
+            {
+                throw new AlreadyInTeamExeption();
+            }
+        }
     }
 }

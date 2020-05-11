@@ -39,6 +39,16 @@ namespace HangManV2.Views
             }
             int place = RankingContext.GetPlayerPosition();
             lblShowPlace.Text = "You are number " + place.ToString()+" in the univerce";
+            List<team> teams = TeamBusiness.GetListOfTeams();
+            int counter2 = 1;
+            foreach (var item in teams)
+            {
+                if (item.TeamId != 1)
+                {
+                    lbTeamsShow.Items.Add("#" + counter2.ToString() + " " + item.TeamName + " - " + item.TeamPointAmount + " points");
+                    counter2++;
+                }
+            }
    
         }
         /// <summary>

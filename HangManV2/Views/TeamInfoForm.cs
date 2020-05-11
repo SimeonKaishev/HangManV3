@@ -1,4 +1,5 @@
 ﻿using HangManV2.Context;
+using HangManV2.Data;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,6 +23,11 @@ namespace HangManV2.Views
             lblTeamMembers.Text += " " + teamInfo[2];
             lblTeamAvgPoints.Text += " " + teamInfo[3];
             lblPlayerPlace.Text += " " + teamInfo[4]+" in this team";
+            List < user > listOfUsers= TeamBusiness.GetAllUsersInTeam();
+            foreach (var item in listOfUsers)
+            {
+                dgUsersInTeam.Rows.Add(item.Username,item.PointAmount);
+            }
         }
 
         private void btnGoBack_Click(object sender, EventArgs e)

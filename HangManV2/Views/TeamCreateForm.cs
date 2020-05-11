@@ -1,5 +1,6 @@
 ﻿using HangManV2.Commons;
 using HangManV2.Context;
+using HangManV2.Data;
 using HangManV2.InterfacesFolder;
 using System;
 using System.Collections.Generic;
@@ -30,10 +31,20 @@ namespace HangManV2.Views
 
         private void btnGoBack_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            var window = new Form1();
-            window.ShowDialog();
-            this.Close();
+            if (CurrentUser.teamId == 1)
+            {
+                this.Hide();
+                var window = new NoTeamForm();
+                window.ShowDialog();
+                this.Close();
+            }
+            else
+            {
+                this.Hide();
+                var window = new TeamInfoForm();
+                window.ShowDialog();
+                this.Close();
+            }
         }
 
         private void btnCreate_Click(object sender, EventArgs e)

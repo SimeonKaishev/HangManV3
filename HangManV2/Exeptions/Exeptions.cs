@@ -110,4 +110,11 @@ namespace HangManV2.Commons
                 
         }
     }
+    class AlreadyInTeamExeption : Exception
+    {
+        public AlreadyInTeamExeption()
+        {
+
+        }
+    }
 }

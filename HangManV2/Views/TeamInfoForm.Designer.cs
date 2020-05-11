@@ -36,6 +36,10 @@
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnSwitch = new System.Windows.Forms.Button();
             this.btnGoBack = new System.Windows.Forms.Button();
+            this.dgUsersInTeam = new System.Windows.Forms.DataGridView();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Points = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsersInTeam)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTeamName
@@ -116,11 +120,39 @@
             this.btnGoBack.UseVisualStyleBackColor = true;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
+            // dgUsersInTeam
+            // 
+            this.dgUsersInTeam.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgUsersInTeam.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.name,
+            this.Points});
+            this.dgUsersInTeam.Location = new System.Drawing.Point(307, 49);
+            this.dgUsersInTeam.Name = "dgUsersInTeam";
+            this.dgUsersInTeam.RowHeadersWidth = 62;
+            this.dgUsersInTeam.RowTemplate.Height = 28;
+            this.dgUsersInTeam.Size = new System.Drawing.Size(378, 298);
+            this.dgUsersInTeam.TabIndex = 8;
+            // 
+            // name
+            // 
+            this.name.HeaderText = "Username";
+            this.name.MinimumWidth = 8;
+            this.name.Name = "name";
+            this.name.Width = 150;
+            // 
+            // Points
+            // 
+            this.Points.HeaderText = "Points";
+            this.Points.MinimumWidth = 8;
+            this.Points.Name = "Points";
+            this.Points.Width = 150;
+            // 
             // TeamInfoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgUsersInTeam);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnSwitch);
             this.Controls.Add(this.btnGoBack);
@@ -131,6 +163,7 @@
             this.Controls.Add(this.lblTeamName);
             this.Name = "TeamInfoForm";
             this.Text = "TeamInfoForm";
+            ((System.ComponentModel.ISupportInitialize)(this.dgUsersInTeam)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -146,5 +179,8 @@
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnSwitch;
         private System.Windows.Forms.Button btnGoBack;
+        private System.Windows.Forms.DataGridView dgUsersInTeam;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Points;
     }
 }

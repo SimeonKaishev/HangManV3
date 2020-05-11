@@ -38,6 +38,7 @@
             this.btnPointsSort = new System.Windows.Forms.Button();
             this.btnAvgPointsSort = new System.Windows.Forms.Button();
             this.btnMembersSort = new System.Windows.Forms.Button();
+            this.btnGoBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgTeamsShow)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +98,7 @@
             // lblSortBy
             // 
             this.lblSortBy.AutoSize = true;
-            this.lblSortBy.Location = new System.Drawing.Point(8, 421);
+            this.lblSortBy.Location = new System.Drawing.Point(128, 373);
             this.lblSortBy.Name = "lblSortBy";
             this.lblSortBy.Size = new System.Drawing.Size(65, 20);
             this.lblSortBy.TabIndex = 2;
@@ -105,7 +106,7 @@
             // 
             // btnPointsSort
             // 
-            this.btnPointsSort.Location = new System.Drawing.Point(79, 396);
+            this.btnPointsSort.Location = new System.Drawing.Point(128, 396);
             this.btnPointsSort.Name = "btnPointsSort";
             this.btnPointsSort.Size = new System.Drawing.Size(98, 45);
             this.btnPointsSort.TabIndex = 3;
@@ -115,7 +116,7 @@
             // 
             // btnAvgPointsSort
             // 
-            this.btnAvgPointsSort.Location = new System.Drawing.Point(183, 396);
+            this.btnAvgPointsSort.Location = new System.Drawing.Point(232, 393);
             this.btnAvgPointsSort.Name = "btnAvgPointsSort";
             this.btnAvgPointsSort.Size = new System.Drawing.Size(98, 45);
             this.btnAvgPointsSort.TabIndex = 4;
@@ -125,7 +126,7 @@
             // 
             // btnMembersSort
             // 
-            this.btnMembersSort.Location = new System.Drawing.Point(287, 396);
+            this.btnMembersSort.Location = new System.Drawing.Point(336, 393);
             this.btnMembersSort.Name = "btnMembersSort";
             this.btnMembersSort.Size = new System.Drawing.Size(98, 45);
             this.btnMembersSort.TabIndex = 5;
@@ -133,11 +134,23 @@
             this.btnMembersSort.UseVisualStyleBackColor = true;
             this.btnMembersSort.Click += new System.EventHandler(this.btnMembersSort_Click);
             // 
+            // btnGoBack
+            // 
+            this.btnGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGoBack.Location = new System.Drawing.Point(8, 396);
+            this.btnGoBack.Name = "btnGoBack";
+            this.btnGoBack.Size = new System.Drawing.Size(114, 45);
+            this.btnGoBack.TabIndex = 6;
+            this.btnGoBack.Text = "go back";
+            this.btnGoBack.UseVisualStyleBackColor = true;
+            this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
+            // 
             // TeamJoinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.btnMembersSort);
             this.Controls.Add(this.btnAvgPointsSort);
             this.Controls.Add(this.btnPointsSort);
@@ -165,5 +178,6 @@
         private System.Windows.Forms.Button btnPointsSort;
         private System.Windows.Forms.Button btnAvgPointsSort;
         private System.Windows.Forms.Button btnMembersSort;
+        private System.Windows.Forms.Button btnGoBack;
     }
 }
