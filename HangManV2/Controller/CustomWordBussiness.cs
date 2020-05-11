@@ -31,6 +31,6 @@ namespace HangManV2.Context
             {
                 throw new WordUnplayableExeption();
             }
-        }
+        }//tuk sum beibe
     }
 }
