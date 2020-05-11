@@ -27,7 +27,7 @@ namespace HangManV2.Context
         /// </exception>
         private static void CheckIfPassIsLongEnough(string Pass)
         {
-            if (Pass.Length < 8)
+            if (Pass.Length < 7)
             {
                 throw new PassTooShortException();
             }
