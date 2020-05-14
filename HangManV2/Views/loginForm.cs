@@ -477,5 +477,17 @@ namespace HangManV2.Views
         {
             lblPassShown.Text = pass;
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
+
+        private void CapsLock_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
