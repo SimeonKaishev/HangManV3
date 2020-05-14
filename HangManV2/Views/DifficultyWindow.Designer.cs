@@ -48,7 +48,7 @@
             // 
             // btnMedium
             // 
-            this.btnMedium.Location = new System.Drawing.Point(290, 171);
+            this.btnMedium.Location = new System.Drawing.Point(164, 171);
             this.btnMedium.Name = "btnMedium";
             this.btnMedium.Size = new System.Drawing.Size(158, 55);
             this.btnMedium.TabIndex = 1;
