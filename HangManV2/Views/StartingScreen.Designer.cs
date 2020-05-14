@@ -30,37 +30,60 @@
         {
             this.btnSignUp = new System.Windows.Forms.Button();
             this.btnLogIn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSignUp
             // 
-            this.btnSignUp.Location = new System.Drawing.Point(35, 364);
+            this.btnSignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSignUp.Image = global::HangManV2.Properties.Resources.signUpButton;
+            this.btnSignUp.Location = new System.Drawing.Point(727, 675);
+            this.btnSignUp.Margin = new System.Windows.Forms.Padding(2);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(75, 39);
+            this.btnSignUp.Size = new System.Drawing.Size(199, 78);
             this.btnSignUp.TabIndex = 5;
-            this.btnSignUp.Text = "SignUp";
-            this.btnSignUp.UseVisualStyleBackColor = true;
+            this.btnSignUp.UseVisualStyleBackColor = false;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
             // 
             // btnLogIn
             // 
-            this.btnLogIn.Location = new System.Drawing.Point(35, 319);
+            this.btnLogIn.BackColor = System.Drawing.Color.DarkRed;
+            this.btnLogIn.BackgroundImage = global::HangManV2.Properties.Resources.login_button;
+            this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnLogIn.Location = new System.Drawing.Point(727, 547);
+            this.btnLogIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogIn.Name = "btnLogIn";
-            this.btnLogIn.Size = new System.Drawing.Size(75, 39);
+            this.btnLogIn.Size = new System.Drawing.Size(199, 78);
             this.btnLogIn.TabIndex = 4;
-            this.btnLogIn.Text = "Log in";
-            this.btnLogIn.UseVisualStyleBackColor = true;
+            this.btnLogIn.UseVisualStyleBackColor = false;
             this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Image = global::HangManV2.Properties.Resources.ExitButton2;
+            this.button1.Location = new System.Drawing.Point(1542, 845);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(45, 45);
+            this.button1.TabIndex = 6;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // StartingScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::HangManV2.Properties.Resources.Starting_form_almost2;
+            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.btnLogIn);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "StartingScreen";
             this.Text = "StartingScreen";
+            this.Load += new System.EventHandler(this.StartingScreen_Load);
             this.ResumeLayout(false);
 
         }
@@ -69,5 +92,6 @@
 
         private System.Windows.Forms.Button btnSignUp;
         private System.Windows.Forms.Button btnLogIn;
+        private System.Windows.Forms.Button button1;
     }
 }

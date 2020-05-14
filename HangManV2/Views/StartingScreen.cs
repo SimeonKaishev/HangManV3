@@ -39,5 +39,18 @@ namespace HangManV2.Views
             window.ShowDialog();
             this.Close();
         }
+
+        private void StartingScreen_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
+    
 }
