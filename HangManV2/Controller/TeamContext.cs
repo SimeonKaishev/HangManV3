@@ -9,8 +9,25 @@ using System.Threading.Tasks;
 
 namespace HangManV2.Context
 {
+    /// <summary>
+    /// This class handles operations connected with teams
+    /// </summary>
     class TeamBusiness
     {
+        /// <summary>
+        /// The method checks if the given value for team name is null
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// try
+        /// {
+        ///  CheckIfTeamNameNull(ImputTeamName);
+        ///  }
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.Commons.TeamNameNullExeption">Thrown when the inserted team name is null
+        /// </exception>
+
         private static void CheckIfTeamNameNull(string ImputTeamName)
         {
             if (ImputTeamName == "")
@@ -18,6 +35,20 @@ namespace HangManV2.Context
                 throw new TeamNameNullExeption();
             }
         }
+        /// <summary>
+        /// The method checks if the given value for team name is already used by another team
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// try
+        /// {
+        ///  CheckIfTeamExists(ImputTeamName);
+        ///  }
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.Commons.TeamAlreadyExistsExeption">Thrown when the inserted  team name is already used by another team
+        /// </exception>
+
         private static void CheckIfTeamExists(string ImputTeamName)
         {
             using (var dbcontext = new TeamContext())
@@ -29,6 +60,21 @@ namespace HangManV2.Context
                 }
             }
         }
+        /// <summary>
+        /// The method creates a team undert the given name and adds it to the database
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// try
+        /// {
+        ///  TeamBusiness.CreateTeam(ImputTeamName);
+        ///  }
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.Commons.TeamAlreadyExistsExeption">Thrown when the inserted  team name is already used by another team
+        /// </exception>
+        /// <exception cref="HangManV2.Commons.TeamNameNullExeption">Thrown when the inserted team name is null
+        /// </exception>
         public static void CreateTeam(string ImputTeamName)
         {
             try
@@ -59,6 +105,14 @@ namespace HangManV2.Context
                 
             }
         }
+        /// <summary>
+        /// The method removes the current users points from their teamID
+        /// </summary>
+        /// <example>
+        /// <code>
+        ///  RemovePointsFromOldTeam();
+        /// </code>
+        /// </example>
         private static void RemovePointsFromOldTeam()
         {
             if (CurrentUser.teamId != 1)
@@ -74,6 +128,17 @@ namespace HangManV2.Context
                 }
             }
         }
+        /// <summary>
+        /// The method returns a list of all team sorted by points
+        /// </summary>
+        ///  <returns>
+        /// List<team>
+        /// </returns>
+        /// <example>
+        /// <code>
+        /// var ListOfTeams = GetListOfTeams();
+        /// </code>
+        /// </example>
         public static List<team> GetListOfTeams()
         {
             using (var dbcontext = new TeamContext())
@@ -82,6 +147,17 @@ namespace HangManV2.Context
                 return listOfAllTeams;
             }
         }
+        /// <summary>
+        /// The method returns a dictionary wit value of number of team members and a key of a team 
+        /// </summary>
+        ///  <returns>
+        /// Dictionary<team, int>
+        /// </returns>
+        /// <example>
+        /// <code>
+        ///  GetListOfTeams();
+        /// </code>
+        /// </example>
         public static Dictionary<team, int> GetTeamsAndNumOfMembers()
         {
             var ListOfTeams = GetListOfTeams();
@@ -101,6 +177,17 @@ namespace HangManV2.Context
             }
             return TeamsAndNumOfMem;
         }
+        /// <summary>
+        /// The method returns the team id of a given team's name
+        /// </summary>
+        ///  <returns>
+        /// int
+        /// </returns>
+        /// <example>
+        /// <code>
+        ///  TeamBusiness.GetTeamIdByName(string teamName);
+        /// </code>
+        /// </example>
         public static int GetTeamIdByName(string teamName)
         {
             using (var dbcontext = new TeamContext())
@@ -111,6 +198,17 @@ namespace HangManV2.Context
                 return TeamIdFound[0];
             }
         }
+        /// <summary>
+        /// The method returns a string array with the current user's team
+        /// </summary>
+        ///  <returns>
+        /// string[]
+        /// </returns>
+        /// <example>
+        /// <code>
+        ///  TeamBusiness.GetTeamInfo();
+        /// </code>
+        /// </example>
         public static string[] GetTeamInfo()
         {
             string[] teamInfo = new string[5];
@@ -133,6 +231,17 @@ namespace HangManV2.Context
             teamInfo[4] = GetUserPLaceInTeam();
             return teamInfo;
         }
+        /// <summary>
+        /// The method returns the current user's place in their team
+        /// </summary>
+        ///  <returns>
+        /// string
+        /// </returns>
+        /// <example>
+        /// <code>
+        ///  TeamBusiness.GetUserPLaceInTeam();
+        /// </code>
+        /// </example>
         private static string GetUserPLaceInTeam()
         {
             List<user> playersByPoints = new List<user>();
@@ -154,6 +263,17 @@ namespace HangManV2.Context
             }
             return counter.ToString();
         }
+        /// <summary>
+        /// The method returns a list of all current members of the team of the current user
+        /// </summary>
+        ///  <returns>
+        /// List<user>
+        /// </returns>
+        /// <example>
+        /// <code>
+        ///  TeamBusiness.GetUserPLaceInTeam();
+        /// </code>
+        /// </example>
         public static List<user> GetAllUsersInTeam()
         {
             List<user> playersByPoints = new List<user>();
@@ -166,6 +286,16 @@ namespace HangManV2.Context
             }
             return playersByPoints;
         }
+        /// <summary>
+        /// The method checks if the given team id is the same as the one of the current user
+        /// </summary>
+        /// <example>
+        /// <code>
+        ///  TeamBusiness.CheckIfTeamDifferent(int teamId);
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.Commons.AlreadyInTeamExeption">Thrown when the ids match
+        /// </exception>
         public static void CheckIfTeamDifferent(int teamId)
         {
             if (teamId == CurrentUser.teamId)

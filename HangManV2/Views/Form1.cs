@@ -72,22 +72,34 @@ namespace HangManV2
             window.ShowDialog();
             this.Close();
         }
-
+        /// <summary>
+        /// The method opens a team info window or a no team window if the crrent user hasnt joined a team
+        /// </summary>
         private void btnTeams_Click(object sender, EventArgs e)
         {
-            if (CurrentUser.teamId == 1 || CurrentUser.teamId == 0)
+            if (CurrentUser.poitAmount < 50)
             {
-                this.Hide();
-                var window = new NoTeamForm();
-                window.ShowDialog();
-                this.Close();
+                string message = "You need at least 50 points to join a team!";
+                string caption = "Error!";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBox.Show(message, caption, buttons);
             }
             else
             {
-                this.Hide();
-                var window = new TeamInfoForm();
-                window.ShowDialog();
-                this.Close();
+                if (CurrentUser.teamId == 1 || CurrentUser.teamId == 0)
+                {
+                    this.Hide();
+                    var window = new NoTeamForm();
+                    window.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    this.Hide();
+                    var window = new TeamInfoForm();
+                    window.ShowDialog();
+                    this.Close();
+                }
             }
         }
     }

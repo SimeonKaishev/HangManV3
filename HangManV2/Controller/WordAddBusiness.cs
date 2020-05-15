@@ -21,8 +21,8 @@ namespace HangManV2.Context
         ///       WordAddBusiness.AddWord(word, out diff);
         /// </code>
         /// </example>
-        /// <exception cref="HangManV2.Context.CheckIfWordAlreadyInDB">Thrown when the word is already in the database
-        /// <exception cref="HangManV2.Context.CheckIfWordPlayable">Thrown when the word is less than 3 symbols
+        /// <exception cref="HangManV2.Commons.WordAlreadyExistsExeption">Thrown when the word is already in the database
+        /// <exception cref="HangManV2.Commons.WordUnplayableExeption">Thrown when the word is less than 3 symbols
      
         public static void AddWord(string word, out string difficulty)
         {

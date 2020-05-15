@@ -14,6 +14,10 @@ using System.Windows.Forms;
 
 namespace HangManV2.Views
 {
+    /// <summary>
+    /// This class handles the view for creating a team
+    /// </summary>
+    /// <param name="teamName">String containing the name of team that is to be created.</param>
     public partial class TeamCreateForm : Form, IKeybaord, IKeyboardBasic, IKeyboardFull
     {
         private string teamName;
@@ -28,7 +32,9 @@ namespace HangManV2.Views
         {
 
         }
-
+        /// <summary>
+        /// Returns the user to the previous window
+        /// </summary>
         private void btnGoBack_Click(object sender, EventArgs e)
         {
             if (CurrentUser.teamId == 1)
@@ -46,7 +52,9 @@ namespace HangManV2.Views
                 this.Close();
             }
         }
-
+        /// <summary>
+        /// Creates a team and joins the current user
+        /// </summary>
         private void btnCreate_Click(object sender, EventArgs e)
         {
             try
