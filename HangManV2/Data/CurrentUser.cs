@@ -9,9 +9,10 @@ namespace HangManV2.Data
 {    /// <summary>
      /// This class keeps the current user
      /// </summary>
-     /// <param name="id">integer value </param>
-     /// <param name="username">string value </param>
-     /// <param name="pointAmount">integer value </param>
+     /// <param name="id">integer value of users id</param>
+     /// <param name="username">string value of users username </param>
+     /// <param name="pointAmount">integer value of users points</param>
+     /// /// <param name="teamId">integer value  of users team id</param>
     static class CurrentUser
     {
         public static int id { get; set; }
@@ -74,6 +75,14 @@ namespace HangManV2.Data
 
 
         }
+        /// <summary>
+        /// The method changes the currents userrs team id and transfers the points
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// CurrentUser.ChangeTeam(int newTeamID)
+        /// </code>
+        /// </example>
         public static void ChangeTeam(int newTeamID)
         {
             using (var dbcontext = new TeamContext())
