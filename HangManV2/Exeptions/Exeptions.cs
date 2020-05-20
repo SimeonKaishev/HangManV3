@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HangManV2.Commons
 {
-    class UserAlreadyExistsExeption : Exception
+    public class UserAlreadyExistsExeption : Exception
     {
         /// <summary>
         /// This class is an exception that is thrown when the user already exists
@@ -19,7 +19,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exeption that is thrown when UserDoesntExist
     /// </summary>
-    class UserDoesntExistExeption : Exception
+    public class UserDoesntExistExeption : Exception
     {
         public UserDoesntExistExeption()
         {
@@ -29,7 +29,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exeption that is thrown when the password is incorrect
     /// </summary>
-    class IncorrectPassExeption : Exception
+    public class IncorrectPassExeption : Exception
     {
         public IncorrectPassExeption()
         {
@@ -39,7 +39,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exception that is thrown when password is too short
     /// </summary>
-    class PassTooShortException : Exception
+    public class PassTooShortException : Exception
     {
         public PassTooShortException()
         {
@@ -49,7 +49,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exeption that is thrown when the chosen letten
     /// </summary>
-    class IncorectLetterExeption : Exception
+    public class IncorectLetterExeption : Exception
     {
         public IncorectLetterExeption()
         {
@@ -59,7 +59,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exception that is thrown when the password doest meet the requirement
     /// </summary>
-    class PassDoesntMeetReqExeption : Exception
+    public class PassDoesntMeetReqExeption : Exception
     {
         public PassDoesntMeetReqExeption()
         { 
@@ -69,7 +69,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exeption that is thrown when the username is null
     /// </summary>
-    class UsernameNullExeption : Exception
+    public class UsernameNullExeption : Exception
     {
         public UsernameNullExeption()
         { 
@@ -79,7 +79,7 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exception that is thrown when the word is unplayable
     /// </summary>
-    class WordUnplayableExeption : Exception
+    public class WordUnplayableExeption : Exception
     {
         public WordUnplayableExeption()
         {
@@ -89,28 +89,37 @@ namespace HangManV2.Commons
     /// <summary>
     /// This class is an exeption that is thrown when the word already exists
     /// </summary>
-    class WordAlreadyExistsExeption : Exception
+    public class WordAlreadyExistsExeption : Exception
     {
         public WordAlreadyExistsExeption()
         { 
         
         }
     }
-    class TeamAlreadyExistsExeption : Exception
+    /// <summary>
+    /// This class is an exeption that is thrown when the team already exists
+    /// </summary>
+    public class TeamAlreadyExistsExeption : Exception
     {
         public TeamAlreadyExistsExeption()
         {
 
         }
     }
-    class TeamNameNullExeption : Exception
+    /// <summary>
+    /// This class is an exeption that is thrown when the inserted team name is null
+    /// </summary>
+    public class TeamNameNullExeption : Exception
     {
         public TeamNameNullExeption()
         {
                 
         }
     }
-    class AlreadyInTeamExeption : Exception
+    /// <summary>
+    /// This class is an exeption that is thrown when the user tries to join a team they are already a member of
+    /// </summary>
+    public class AlreadyInTeamExeption : Exception
     {
         public AlreadyInTeamExeption()
         {
