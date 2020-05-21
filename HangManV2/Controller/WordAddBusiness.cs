@@ -11,7 +11,7 @@ namespace HangManV2.Context
     /// <summary>
     /// This class handles operations connected with adding words to the database
     /// </summary>
-    class WordAddBusiness
+    public class WordAddBusiness
     {
         /// <summary>
         /// The method adds a word with certain difficuly in the database
@@ -71,10 +71,34 @@ namespace HangManV2.Context
             using (var dbcontext = new WordContext())
             {
                 var words = (from word in dbcontext.Words where word.Word1 == imputWord select word.Word1).ToList();
-                if (words.Count != 0)
+                try
+                {
+                    CheckIfWordListEmpty(words);
+                }
+                catch (WordAlreadyExistsExeption)
                 {
                     throw new WordAlreadyExistsExeption();
                 }
+            }
+        }
+        /// <summary>
+        /// The method checks if the iserted word is in the given List
+        /// </summary>
+        /// <example>
+        /// <code>
+        /// try
+        /// {
+        ///  CheckIfWordListEmpty(words);
+        ///  }
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.Commons.WordAlreadyExistsExeption">Thrown when the word is already in the db
+        /// </exception>
+        public static void CheckIfWordListEmpty(List<string> words)
+        {
+            if (words.Count != 0)
+            {
+                throw new WordAlreadyExistsExeption();
             }
         }
         /// <summary>
@@ -86,7 +110,7 @@ namespace HangManV2.Context
         /// </code>
         /// </example>
         /// <exception cref="HangManV2.Context.WordUnplayableExeption">Thrown when the word less than 3 characters
-        private static void CheckIfWordPlayable(string word)
+        public static void CheckIfWordPlayable(string word)
         {
             if (word.Length < 3)
             {
@@ -104,7 +128,7 @@ namespace HangManV2.Context
         /// WordAddBusiness.AddWord(word, out diff);
         /// </code>
         /// </example>
-        private static string DetermineWordDifficulty(string word)
+        public static string DetermineWordDifficulty(string word)
         {
             int countOfDistinctLetters = word.Distinct().Count();
             if (countOfDistinctLetters <= 5)
@@ -117,7 +141,7 @@ namespace HangManV2.Context
                 return "medium";
             }
             else
-            if (countOfDistinctLetters <= 15 && countOfDistinctLetters > 10)
+            if (countOfDistinctLetters <= 13 && countOfDistinctLetters > 10)
             {
                 return "hard";
             }

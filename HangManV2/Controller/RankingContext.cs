@@ -12,7 +12,7 @@ namespace HangManV2.Context
     /// This class handles oprations connected with ranking
     /// </summary>
      /// <param name="topUsers">A list of users.</param>
-    static class RankingContext
+    public static class RankingContext
     {
         private static List<user> topUsers=new List<user>();
         /// <summary>
@@ -68,14 +68,20 @@ namespace HangManV2.Context
                                      orderby user.PointAmount descending
                                      select user).ToList();
             }
-            int counter = 0;
-            foreach (var item in playersByPoints)
+            
+            return GetPlayerPosInList(playersByPoints, CurrentUser.id);
+        }
+        public static int GetPlayerPosInList(List<user> listOfUsers,int playerId)
+        {
+            int counter = 1;
+            foreach (var item in listOfUsers)
             {
-                counter++;
-                if (item.Id == CurrentUser.id)
+                
+                if (item.Id == playerId)
                 {
                     break;
                 }
+                counter++;
             }
             return counter;
         }

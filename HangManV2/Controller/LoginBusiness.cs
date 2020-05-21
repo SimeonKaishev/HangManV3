@@ -12,7 +12,7 @@ namespace HangManV2.Context
     /// <summary>
     /// This class handles operations connected wit logging in
     /// </summary>
-    class LoginBusiness
+    public class LoginBusiness
     {
         /// <summary>
         /// The method checks if the user exists in the database
@@ -32,11 +32,35 @@ namespace HangManV2.Context
             using (var dbcontext = new UserContext())
             {
                 var usr = (from user in dbcontext.Users where user.Username == imputUsername select user).ToList();
-                if (usr.Count == 0)
+                try
+                {
+                    CheckIfUsrListEmpty(usr);
+                }
+                catch (UserAlreadyExistsExeption)
                 {
                     throw new UserDoesntExistExeption();
                 }
                 uzer = usr[0];
+            }
+        }
+        /// <summary>
+        /// The method checks if the given list of users is empty
+        /// </summary>
+        /// <example>
+        /// <code>
+        ///       try
+        ///       {
+        ///         CheckIfUsrListEmpty(usr);
+        ///       }
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.ContextDoesntExistException.UserDoesntExistExeption">Thrown when the user isn't in the database
+        /// </exception>
+        public static void CheckIfUsrListEmpty(List<user> users)
+        {
+            if (users.Count == 0)
+            {
+                throw new UserDoesntExistExeption();
             }
         }
         /// <summary>
