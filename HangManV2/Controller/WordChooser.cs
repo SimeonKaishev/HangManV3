@@ -10,7 +10,7 @@ namespace HangManV2.Context
     /// <summary>
     /// This class handles operation connected with choosing a random word
     /// </summary>
-    static class WordChooser
+    public static class WordChooser
     {
         // <summary>
         /// The method chooses a random word with certain difficulty
@@ -41,7 +41,7 @@ namespace HangManV2.Context
         /// int chosenId = idsOfCorrectDiff[ChooseRandomNum(idsOfCorrectDiff.Length)];
         /// </code>
         /// </example>
-        private static int ChooseRandomNum(int ArraySize)
+        public static int ChooseRandomNum(int ArraySize)
         {
             Random rnd = new Random();
             int chosenNum = rnd.Next(ArraySize);

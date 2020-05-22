@@ -13,7 +13,7 @@ namespace HangManV2.Context
     /// <param name="WordInPlay">String containing the word currently in play.</param>
     /// <param name="HiddenWord">String containing the word currently in play but in asteriscs.</param>
     /// <param name="Mistakes">Intager containing the amount of wrong guesses the player has made.</param>
-    class GamePlayBusiness
+    public class GamePlayBusiness
     {
         public string WordInPlay { get; set; }
         public string HiddenWord { get; set; }
@@ -64,7 +64,7 @@ namespace HangManV2.Context
         /// <code>
         /// List<int> letterPositions = FindPossitionOfLettersInWord(playedLetter);
         /// </code>
-        private List<int> FindPossitionOfLettersInWord(char playedLetter)
+        public List<int> FindPossitionOfLettersInWord(char playedLetter)
         {
             List<int> letterPos = new List<int>();
             for (int i = 0; i < this.WordInPlay.Length; i++)
@@ -86,7 +86,7 @@ namespace HangManV2.Context
         /// </example>
         /// <exception cref="HangManV2.Context.IncorectLetterExeption">Thrown when the character is not contained in the word
         /// </exception>
-        private void CheckIfLetterCorrect(char playedLetter)
+        public void CheckIfLetterCorrect(char playedLetter)
         {
             if (!this.WordInPlay.Contains(playedLetter))
             {
@@ -105,7 +105,7 @@ namespace HangManV2.Context
         /// <param name="firstLetter">Char containing the first letter of the word in play</param>
         /// <param name="lastLetter">the last letter</param>
         /// <param name="hidden">the part of the word in play that gets replced by asterisks</param>
-        private string CreateHiddenWord()
+        public string CreateHiddenWord()
         {
             char firstLetter = this.WordInPlay[0];
             char lastLetter = this.WordInPlay[this.WordInPlay.Length - 1];

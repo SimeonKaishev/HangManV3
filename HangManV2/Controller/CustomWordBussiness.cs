@@ -10,7 +10,7 @@ namespace HangManV2.Context
     /// <summary>
     /// This class handles operations connected with playng the game with an word inserted by the user
     /// </summary>
-    static class CustomWordBussiness
+    public static class CustomWordBussiness
     {
         /// <summary>
         /// Checks if the word imput by the user is elidgeble for play

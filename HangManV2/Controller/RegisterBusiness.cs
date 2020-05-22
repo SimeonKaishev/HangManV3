@@ -13,7 +13,7 @@ namespace HangManV2.Context
     /// <summary>
     /// This class handles operations connected wit registering
     /// </summary>
-    class RegisterBusiness
+    public class RegisterBusiness
     {
         /// <summary>
         /// The method checks if the password is long enought(more than 8 symbols)
@@ -25,7 +25,7 @@ namespace HangManV2.Context
         /// </example>
         /// <exception cref="HangManV2.Commons.PassTooShortException">Thrown when the password is less than 8 symbols
         /// </exception>
-        private static void CheckIfPassIsLongEnough(string Pass)
+        public static void CheckIfPassIsLongEnough(string Pass)
         {
             if (Pass.Length < 7)
             {
@@ -45,7 +45,7 @@ namespace HangManV2.Context
         /// </example>
         /// <exception cref="HangManV2.Commons.UsernameNullExeption">Thrown when the imput username is null
         /// </exception>
-        private static void CheckIfUsernameNull(string username)
+        public static void CheckIfUsernameNull(string username)
         {
             if (username=="")
             {
@@ -69,11 +69,35 @@ namespace HangManV2.Context
         {
             using (var dbcontext = new UserContext())
             {
-                var usrname = (from user in dbcontext.Users where user.Username == imputUsername select user.Username).ToList();
-                if (usrname.Count != 0)
+                var usrnames = (from user in dbcontext.Users where user.Username == imputUsername select user.Username).ToList();
+                try
+                {
+                    CheckIfListOfUsersNamesEmpty(usrnames);
+                }
+                catch (UserAlreadyExistsExeption)
                 {
                     throw new UserAlreadyExistsExeption();
                 }
+            }
+        }
+        /// <summary>
+        /// The method checks if the given list is empty
+        /// </summary>
+        /// <example>
+        /// <code>
+        ///       try
+        ///       {
+        ///         CheckIfListOfUsersNamesEmpty(usrnames);
+        ///       }
+        /// </code>
+        /// </example>
+        /// <exception cref="HangManV2.Commons.UserAlreadyExistsExeption">Thrown when the imput username is null
+        /// </exception>
+        public static void CheckIfListOfUsersNamesEmpty(List<string> usernames)
+        {
+            if (usernames.Count != 0)
+            {
+                throw new UserAlreadyExistsExeption();
             }
         }
         /// <summary>
@@ -89,7 +113,7 @@ namespace HangManV2.Context
         /// </example>
         /// <exception cref="HangManV2.Commons.PassDoesntMeetReqExeption">Thrown when the imput password doesnt meet the requirement
         /// </exception>
-        private static void CheckIfPassMeetsRequrements(string imputPass)
+        public static void CheckIfPassMeetsRequrements(string imputPass)
         {
             if (!imputPass.Any(c => char.IsUpper(c))|| !imputPass.Any(c => char.IsLower(c))|| !imputPass.Any(c => char.IsDigit(c)))
             {
