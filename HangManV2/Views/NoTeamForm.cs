@@ -52,5 +52,12 @@ namespace HangManV2.Views
             window.ShowDialog();
             this.Close();
         }
+
+        private void NoTeamForm_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
     }
 }

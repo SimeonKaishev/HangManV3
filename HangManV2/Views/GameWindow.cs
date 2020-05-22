@@ -303,5 +303,12 @@ namespace HangManV2.Views
                 }
             
         }
+
+        private void GameWindow_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
     }
 }

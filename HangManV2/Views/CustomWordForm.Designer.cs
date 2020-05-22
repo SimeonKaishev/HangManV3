@@ -63,364 +63,398 @@
             // 
             // btnL
             // 
+            this.btnL.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnL.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnL.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnL.Location = new System.Drawing.Point(378, 349);
-            this.btnL.Margin = new System.Windows.Forms.Padding(4);
+            this.btnL.Image = global::HangManV2.Properties.Resources.button_L;
+            this.btnL.Location = new System.Drawing.Point(1044, 549);
             this.btnL.Name = "btnL";
-            this.btnL.Size = new System.Drawing.Size(36, 36);
+            this.btnL.Size = new System.Drawing.Size(70, 70);
             this.btnL.TabIndex = 82;
-            this.btnL.Text = "L";
-            this.btnL.UseVisualStyleBackColor = true;
+            this.btnL.UseVisualStyleBackColor = false;
             this.btnL.Click += new System.EventHandler(this.btnL_Click);
             // 
             // btnP
             // 
+            this.btnP.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnP.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnP.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnP.Location = new System.Drawing.Point(422, 305);
-            this.btnP.Margin = new System.Windows.Forms.Padding(4);
+            this.btnP.Image = global::HangManV2.Properties.Resources.button_p;
+            this.btnP.Location = new System.Drawing.Point(1120, 473);
             this.btnP.Name = "btnP";
-            this.btnP.Size = new System.Drawing.Size(36, 36);
+            this.btnP.Size = new System.Drawing.Size(70, 70);
             this.btnP.TabIndex = 81;
-            this.btnP.Text = "P";
-            this.btnP.UseVisualStyleBackColor = true;
+            this.btnP.UseVisualStyleBackColor = false;
             this.btnP.Click += new System.EventHandler(this.btnP_Click);
             // 
             // btnM
             // 
+            this.btnM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnM.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnM.Location = new System.Drawing.Point(290, 393);
-            this.btnM.Margin = new System.Windows.Forms.Padding(4);
+            this.btnM.Image = global::HangManV2.Properties.Resources.button_m;
+            this.btnM.Location = new System.Drawing.Point(892, 625);
             this.btnM.Name = "btnM";
-            this.btnM.Size = new System.Drawing.Size(36, 36);
+            this.btnM.Size = new System.Drawing.Size(70, 70);
             this.btnM.TabIndex = 80;
-            this.btnM.Text = "M";
-            this.btnM.UseVisualStyleBackColor = true;
+            this.btnM.UseVisualStyleBackColor = false;
             this.btnM.Click += new System.EventHandler(this.btnM_Click);
             // 
             // btnN
             // 
+            this.btnN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnN.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnN.Location = new System.Drawing.Point(246, 393);
-            this.btnN.Margin = new System.Windows.Forms.Padding(4);
+            this.btnN.Image = global::HangManV2.Properties.Resources.button_n;
+            this.btnN.Location = new System.Drawing.Point(816, 625);
             this.btnN.Name = "btnN";
-            this.btnN.Size = new System.Drawing.Size(36, 36);
+            this.btnN.Size = new System.Drawing.Size(70, 70);
             this.btnN.TabIndex = 79;
-            this.btnN.Text = "N";
-            this.btnN.UseVisualStyleBackColor = true;
+            this.btnN.UseVisualStyleBackColor = false;
             this.btnN.Click += new System.EventHandler(this.btnN_Click);
             // 
             // btnB
             // 
+            this.btnB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnB.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnB.Location = new System.Drawing.Point(202, 393);
-            this.btnB.Margin = new System.Windows.Forms.Padding(4);
+            this.btnB.Image = global::HangManV2.Properties.Resources.button_b;
+            this.btnB.Location = new System.Drawing.Point(740, 625);
             this.btnB.Name = "btnB";
-            this.btnB.Size = new System.Drawing.Size(36, 36);
+            this.btnB.Size = new System.Drawing.Size(70, 70);
             this.btnB.TabIndex = 78;
-            this.btnB.Text = "B";
-            this.btnB.UseVisualStyleBackColor = true;
+            this.btnB.UseVisualStyleBackColor = false;
             this.btnB.Click += new System.EventHandler(this.btnB_Click);
             // 
             // btnV
             // 
+            this.btnV.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnV.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnV.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnV.Location = new System.Drawing.Point(158, 393);
-            this.btnV.Margin = new System.Windows.Forms.Padding(4);
+            this.btnV.Image = global::HangManV2.Properties.Resources.button_v;
+            this.btnV.Location = new System.Drawing.Point(664, 625);
             this.btnV.Name = "btnV";
-            this.btnV.Size = new System.Drawing.Size(36, 36);
+            this.btnV.Size = new System.Drawing.Size(70, 70);
             this.btnV.TabIndex = 77;
-            this.btnV.Text = "V";
-            this.btnV.UseVisualStyleBackColor = true;
+            this.btnV.UseVisualStyleBackColor = false;
             this.btnV.Click += new System.EventHandler(this.btnV_Click);
             // 
             // btnC
             // 
+            this.btnC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnC.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnC.Location = new System.Drawing.Point(114, 393);
-            this.btnC.Margin = new System.Windows.Forms.Padding(4);
+            this.btnC.Image = global::HangManV2.Properties.Resources.button_c;
+            this.btnC.Location = new System.Drawing.Point(588, 625);
             this.btnC.Name = "btnC";
-            this.btnC.Size = new System.Drawing.Size(36, 36);
+            this.btnC.Size = new System.Drawing.Size(70, 70);
             this.btnC.TabIndex = 76;
-            this.btnC.Text = "C";
-            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.UseVisualStyleBackColor = false;
             this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // btnX
             // 
+            this.btnX.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnX.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnX.Location = new System.Drawing.Point(70, 393);
-            this.btnX.Margin = new System.Windows.Forms.Padding(4);
+            this.btnX.Image = global::HangManV2.Properties.Resources.button_x;
+            this.btnX.Location = new System.Drawing.Point(512, 625);
             this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(36, 36);
+            this.btnX.Size = new System.Drawing.Size(70, 70);
             this.btnX.TabIndex = 75;
-            this.btnX.Text = "X";
-            this.btnX.UseVisualStyleBackColor = true;
+            this.btnX.UseVisualStyleBackColor = false;
             this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // btnZ
             // 
+            this.btnZ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnZ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnZ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnZ.Location = new System.Drawing.Point(26, 393);
-            this.btnZ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnZ.Image = global::HangManV2.Properties.Resources.button_z;
+            this.btnZ.Location = new System.Drawing.Point(436, 625);
             this.btnZ.Name = "btnZ";
-            this.btnZ.Size = new System.Drawing.Size(36, 36);
+            this.btnZ.Size = new System.Drawing.Size(70, 70);
             this.btnZ.TabIndex = 74;
-            this.btnZ.Text = "Z";
-            this.btnZ.UseVisualStyleBackColor = true;
+            this.btnZ.UseVisualStyleBackColor = false;
             this.btnZ.Click += new System.EventHandler(this.btnZ_Click);
             // 
             // btnK
             // 
+            this.btnK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnK.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnK.Location = new System.Drawing.Point(334, 349);
-            this.btnK.Margin = new System.Windows.Forms.Padding(4);
+            this.btnK.Image = global::HangManV2.Properties.Resources.button_k;
+            this.btnK.Location = new System.Drawing.Point(968, 549);
             this.btnK.Name = "btnK";
-            this.btnK.Size = new System.Drawing.Size(36, 36);
+            this.btnK.Size = new System.Drawing.Size(70, 70);
             this.btnK.TabIndex = 73;
-            this.btnK.Text = "K";
-            this.btnK.UseVisualStyleBackColor = true;
+            this.btnK.UseVisualStyleBackColor = false;
             this.btnK.Click += new System.EventHandler(this.btnK_Click);
             // 
             // btnJ
             // 
+            this.btnJ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnJ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnJ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnJ.Location = new System.Drawing.Point(290, 349);
-            this.btnJ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnJ.Image = global::HangManV2.Properties.Resources.button_j;
+            this.btnJ.Location = new System.Drawing.Point(892, 549);
             this.btnJ.Name = "btnJ";
-            this.btnJ.Size = new System.Drawing.Size(36, 36);
+            this.btnJ.Size = new System.Drawing.Size(70, 70);
             this.btnJ.TabIndex = 72;
-            this.btnJ.Text = "J";
-            this.btnJ.UseVisualStyleBackColor = true;
+            this.btnJ.UseVisualStyleBackColor = false;
             this.btnJ.Click += new System.EventHandler(this.btnJ_Click);
             // 
             // btnH
             // 
+            this.btnH.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnH.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnH.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnH.Location = new System.Drawing.Point(246, 349);
-            this.btnH.Margin = new System.Windows.Forms.Padding(4);
+            this.btnH.Image = global::HangManV2.Properties.Resources.button_h;
+            this.btnH.Location = new System.Drawing.Point(816, 549);
             this.btnH.Name = "btnH";
-            this.btnH.Size = new System.Drawing.Size(36, 36);
+            this.btnH.Size = new System.Drawing.Size(70, 70);
             this.btnH.TabIndex = 71;
-            this.btnH.Text = "H";
-            this.btnH.UseVisualStyleBackColor = true;
+            this.btnH.UseVisualStyleBackColor = false;
             this.btnH.Click += new System.EventHandler(this.btnH_Click);
             // 
             // btnG
             // 
+            this.btnG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnG.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnG.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnG.Location = new System.Drawing.Point(202, 349);
-            this.btnG.Margin = new System.Windows.Forms.Padding(4);
+            this.btnG.Image = global::HangManV2.Properties.Resources.button_g;
+            this.btnG.Location = new System.Drawing.Point(740, 549);
             this.btnG.Name = "btnG";
-            this.btnG.Size = new System.Drawing.Size(36, 36);
+            this.btnG.Size = new System.Drawing.Size(70, 70);
             this.btnG.TabIndex = 70;
-            this.btnG.Text = "G";
-            this.btnG.UseVisualStyleBackColor = true;
+            this.btnG.UseVisualStyleBackColor = false;
             this.btnG.Click += new System.EventHandler(this.btnG_Click);
             // 
             // btnF
             // 
+            this.btnF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnF.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnF.Location = new System.Drawing.Point(158, 349);
-            this.btnF.Margin = new System.Windows.Forms.Padding(4);
+            this.btnF.Image = global::HangManV2.Properties.Resources.button_f;
+            this.btnF.Location = new System.Drawing.Point(664, 549);
             this.btnF.Name = "btnF";
-            this.btnF.Size = new System.Drawing.Size(36, 36);
+            this.btnF.Size = new System.Drawing.Size(70, 70);
             this.btnF.TabIndex = 69;
-            this.btnF.Text = "F";
-            this.btnF.UseVisualStyleBackColor = true;
+            this.btnF.UseVisualStyleBackColor = false;
             this.btnF.Click += new System.EventHandler(this.btnF_Click);
             // 
             // btnD
             // 
+            this.btnD.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnD.Location = new System.Drawing.Point(114, 349);
-            this.btnD.Margin = new System.Windows.Forms.Padding(4);
+            this.btnD.Image = global::HangManV2.Properties.Resources.button_d;
+            this.btnD.Location = new System.Drawing.Point(588, 549);
             this.btnD.Name = "btnD";
-            this.btnD.Size = new System.Drawing.Size(36, 36);
+            this.btnD.Size = new System.Drawing.Size(70, 70);
             this.btnD.TabIndex = 68;
-            this.btnD.Text = "D";
-            this.btnD.UseVisualStyleBackColor = true;
+            this.btnD.UseVisualStyleBackColor = false;
             this.btnD.Click += new System.EventHandler(this.btnD_Click);
             // 
             // btnS
             // 
+            this.btnS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnS.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnS.Location = new System.Drawing.Point(70, 349);
-            this.btnS.Margin = new System.Windows.Forms.Padding(4);
+            this.btnS.Image = global::HangManV2.Properties.Resources.button_s;
+            this.btnS.Location = new System.Drawing.Point(512, 549);
             this.btnS.Name = "btnS";
-            this.btnS.Size = new System.Drawing.Size(36, 36);
+            this.btnS.Size = new System.Drawing.Size(70, 70);
             this.btnS.TabIndex = 67;
-            this.btnS.Text = "S";
-            this.btnS.UseVisualStyleBackColor = true;
+            this.btnS.UseVisualStyleBackColor = false;
             this.btnS.Click += new System.EventHandler(this.btnS_Click);
             // 
             // btnA
             // 
+            this.btnA.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnA.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnA.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnA.Location = new System.Drawing.Point(26, 349);
-            this.btnA.Margin = new System.Windows.Forms.Padding(4);
+            this.btnA.Image = global::HangManV2.Properties.Resources.button_a;
+            this.btnA.Location = new System.Drawing.Point(436, 549);
             this.btnA.Name = "btnA";
-            this.btnA.Size = new System.Drawing.Size(36, 36);
+            this.btnA.Size = new System.Drawing.Size(70, 70);
             this.btnA.TabIndex = 66;
-            this.btnA.Text = "A";
-            this.btnA.UseVisualStyleBackColor = true;
+            this.btnA.UseVisualStyleBackColor = false;
             this.btnA.Click += new System.EventHandler(this.btnA_Click);
             // 
             // btnO
             // 
+            this.btnO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnO.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnO.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnO.Location = new System.Drawing.Point(378, 305);
-            this.btnO.Margin = new System.Windows.Forms.Padding(4);
+            this.btnO.Image = global::HangManV2.Properties.Resources.button_o;
+            this.btnO.Location = new System.Drawing.Point(1044, 473);
             this.btnO.Name = "btnO";
-            this.btnO.Size = new System.Drawing.Size(36, 36);
+            this.btnO.Size = new System.Drawing.Size(70, 70);
             this.btnO.TabIndex = 65;
-            this.btnO.Text = "O";
-            this.btnO.UseVisualStyleBackColor = true;
+            this.btnO.UseVisualStyleBackColor = false;
             this.btnO.Click += new System.EventHandler(this.btnO_Click);
             // 
             // btnI
             // 
+            this.btnI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnI.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnI.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnI.Location = new System.Drawing.Point(334, 305);
-            this.btnI.Margin = new System.Windows.Forms.Padding(4);
+            this.btnI.Image = global::HangManV2.Properties.Resources.button_ii;
+            this.btnI.Location = new System.Drawing.Point(968, 473);
             this.btnI.Name = "btnI";
-            this.btnI.Size = new System.Drawing.Size(36, 36);
+            this.btnI.Size = new System.Drawing.Size(70, 70);
             this.btnI.TabIndex = 64;
-            this.btnI.Text = "I";
-            this.btnI.UseVisualStyleBackColor = true;
+            this.btnI.UseVisualStyleBackColor = false;
             this.btnI.Click += new System.EventHandler(this.btnI_Click);
             // 
             // btnU
             // 
+            this.btnU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnU.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnU.Location = new System.Drawing.Point(290, 305);
-            this.btnU.Margin = new System.Windows.Forms.Padding(4);
+            this.btnU.Image = global::HangManV2.Properties.Resources.button_u;
+            this.btnU.Location = new System.Drawing.Point(892, 473);
             this.btnU.Name = "btnU";
-            this.btnU.Size = new System.Drawing.Size(36, 36);
+            this.btnU.Size = new System.Drawing.Size(70, 70);
             this.btnU.TabIndex = 63;
-            this.btnU.Text = "U";
-            this.btnU.UseVisualStyleBackColor = true;
+            this.btnU.UseVisualStyleBackColor = false;
             this.btnU.Click += new System.EventHandler(this.btnU_Click);
             // 
             // btnY
             // 
+            this.btnY.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnY.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnY.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnY.Location = new System.Drawing.Point(246, 305);
-            this.btnY.Margin = new System.Windows.Forms.Padding(4);
+            this.btnY.Image = global::HangManV2.Properties.Resources.button_y;
+            this.btnY.Location = new System.Drawing.Point(816, 473);
             this.btnY.Name = "btnY";
-            this.btnY.Size = new System.Drawing.Size(36, 36);
+            this.btnY.Size = new System.Drawing.Size(70, 70);
             this.btnY.TabIndex = 62;
-            this.btnY.Text = "Y";
-            this.btnY.UseVisualStyleBackColor = true;
+            this.btnY.UseVisualStyleBackColor = false;
             this.btnY.Click += new System.EventHandler(this.btnY_Click);
             // 
             // btnT
             // 
+            this.btnT.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnT.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnT.Location = new System.Drawing.Point(202, 305);
-            this.btnT.Margin = new System.Windows.Forms.Padding(4);
+            this.btnT.Image = global::HangManV2.Properties.Resources.button_t;
+            this.btnT.Location = new System.Drawing.Point(740, 473);
             this.btnT.Name = "btnT";
-            this.btnT.Size = new System.Drawing.Size(36, 36);
+            this.btnT.Size = new System.Drawing.Size(70, 70);
             this.btnT.TabIndex = 61;
-            this.btnT.Text = "T";
-            this.btnT.UseVisualStyleBackColor = true;
+            this.btnT.UseVisualStyleBackColor = false;
             this.btnT.Click += new System.EventHandler(this.btnT_Click);
             // 
             // btnR
             // 
+            this.btnR.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnR.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnR.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnR.Location = new System.Drawing.Point(158, 305);
-            this.btnR.Margin = new System.Windows.Forms.Padding(4);
+            this.btnR.Image = global::HangManV2.Properties.Resources.button_r;
+            this.btnR.Location = new System.Drawing.Point(664, 473);
             this.btnR.Name = "btnR";
-            this.btnR.Size = new System.Drawing.Size(36, 36);
+            this.btnR.Size = new System.Drawing.Size(70, 70);
             this.btnR.TabIndex = 60;
-            this.btnR.Text = "R";
-            this.btnR.UseVisualStyleBackColor = true;
+            this.btnR.UseVisualStyleBackColor = false;
             this.btnR.Click += new System.EventHandler(this.btnR_Click);
             // 
             // btnE
             // 
+            this.btnE.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnE.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnE.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnE.Location = new System.Drawing.Point(114, 305);
-            this.btnE.Margin = new System.Windows.Forms.Padding(4);
+            this.btnE.Image = global::HangManV2.Properties.Resources.button_e;
+            this.btnE.Location = new System.Drawing.Point(588, 473);
             this.btnE.Name = "btnE";
-            this.btnE.Size = new System.Drawing.Size(36, 36);
+            this.btnE.Size = new System.Drawing.Size(70, 70);
             this.btnE.TabIndex = 59;
-            this.btnE.Text = "E";
-            this.btnE.UseVisualStyleBackColor = true;
+            this.btnE.UseVisualStyleBackColor = false;
             this.btnE.Click += new System.EventHandler(this.btnE_Click);
             // 
             // btnW
             // 
+            this.btnW.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnW.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnW.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnW.Location = new System.Drawing.Point(70, 305);
-            this.btnW.Margin = new System.Windows.Forms.Padding(4);
+            this.btnW.Image = global::HangManV2.Properties.Resources.button_w;
+            this.btnW.Location = new System.Drawing.Point(512, 473);
             this.btnW.Name = "btnW";
-            this.btnW.Size = new System.Drawing.Size(36, 36);
+            this.btnW.Size = new System.Drawing.Size(70, 70);
             this.btnW.TabIndex = 58;
-            this.btnW.Text = "W";
-            this.btnW.UseVisualStyleBackColor = true;
+            this.btnW.UseVisualStyleBackColor = false;
             this.btnW.Click += new System.EventHandler(this.btnW_Click);
             // 
             // btnQ
             // 
+            this.btnQ.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnQ.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnQ.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnQ.Location = new System.Drawing.Point(26, 305);
-            this.btnQ.Margin = new System.Windows.Forms.Padding(4);
+            this.btnQ.Image = global::HangManV2.Properties.Resources.button_q;
+            this.btnQ.Location = new System.Drawing.Point(436, 473);
             this.btnQ.Name = "btnQ";
-            this.btnQ.Size = new System.Drawing.Size(36, 36);
+            this.btnQ.Size = new System.Drawing.Size(70, 70);
             this.btnQ.TabIndex = 57;
-            this.btnQ.Text = "Q";
-            this.btnQ.UseVisualStyleBackColor = true;
+            this.btnQ.UseVisualStyleBackColor = false;
             this.btnQ.Click += new System.EventHandler(this.btnQ_Click);
             // 
             // lblHiddenWord
             // 
             this.lblHiddenWord.AutoSize = true;
+            this.lblHiddenWord.BackColor = System.Drawing.Color.Transparent;
             this.lblHiddenWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHiddenWord.Location = new System.Drawing.Point(25, 242);
+            this.lblHiddenWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblHiddenWord.Location = new System.Drawing.Point(687, 331);
+            this.lblHiddenWord.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblHiddenWord.Name = "lblHiddenWord";
-            this.lblHiddenWord.Size = new System.Drawing.Size(126, 46);
+            this.lblHiddenWord.Size = new System.Drawing.Size(0, 31);
             this.lblHiddenWord.TabIndex = 56;
-            this.lblHiddenWord.Text = "label1";
             // 
             // btnContinue
             // 
-            this.btnContinue.Location = new System.Drawing.Point(620, 348);
+            this.btnContinue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnContinue.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnContinue.Image = global::HangManV2.Properties.Resources.CustomWordPlayButtonReady;
+            this.btnContinue.Location = new System.Drawing.Point(1120, 324);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(2);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(132, 81);
+            this.btnContinue.Size = new System.Drawing.Size(92, 48);
             this.btnContinue.TabIndex = 83;
-            this.btnContinue.Text = "Play word";
-            this.btnContinue.UseVisualStyleBackColor = true;
+            this.btnContinue.UseVisualStyleBackColor = false;
             this.btnContinue.Click += new System.EventHandler(this.btnContinue_Click);
             // 
             // btnBackspace
             // 
+            this.btnBackspace.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnBackspace.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnBackspace.Font = new System.Drawing.Font("Microsoft Sans Serif", 4F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnBackspace.Location = new System.Drawing.Point(422, 349);
-            this.btnBackspace.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBackspace.Image = global::HangManV2.Properties.Resources.button_del;
+            this.btnBackspace.Location = new System.Drawing.Point(1120, 549);
             this.btnBackspace.Name = "btnBackspace";
-            this.btnBackspace.Size = new System.Drawing.Size(36, 36);
+            this.btnBackspace.Size = new System.Drawing.Size(70, 70);
             this.btnBackspace.TabIndex = 136;
-            this.btnBackspace.Text = "DEL";
-            this.btnBackspace.UseVisualStyleBackColor = true;
+            this.btnBackspace.UseVisualStyleBackColor = false;
             this.btnBackspace.Click += new System.EventHandler(this.btnBackspace_Click);
             // 
             // btnDone
             // 
+            this.btnDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDone.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDone.Location = new System.Drawing.Point(334, 393);
-            this.btnDone.Margin = new System.Windows.Forms.Padding(4);
+            this.btnDone.Image = global::HangManV2.Properties.Resources.CustomWordFormDoneButton;
+            this.btnDone.Location = new System.Drawing.Point(968, 625);
             this.btnDone.Name = "btnDone";
-            this.btnDone.Size = new System.Drawing.Size(124, 36);
+            this.btnDone.Size = new System.Drawing.Size(75, 70);
             this.btnDone.TabIndex = 137;
-            this.btnDone.Text = "Done";
-            this.btnDone.UseVisualStyleBackColor = true;
+            this.btnDone.UseVisualStyleBackColor = false;
             // 
             // btnGoBack
             // 
-            this.btnGoBack.Location = new System.Drawing.Point(12, 12);
+            this.btnGoBack.Location = new System.Drawing.Point(8, 8);
+            this.btnGoBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(75, 31);
+            this.btnGoBack.Size = new System.Drawing.Size(50, 20);
             this.btnGoBack.TabIndex = 138;
             this.btnGoBack.Text = "back";
             this.btnGoBack.UseVisualStyleBackColor = true;
@@ -428,9 +462,10 @@
             // 
             // CustomWordForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::HangManV2.Properties.Resources.AddwordBackgroundReady;
+            this.ClientSize = new System.Drawing.Size(1604, 881);
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnBackspace);
@@ -463,8 +498,10 @@
             this.Controls.Add(this.btnQ);
             this.Controls.Add(this.lblHiddenWord);
             this.KeyPreview = true;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CustomWordForm";
             this.Text = "CustomWord";
+            this.Load += new System.EventHandler(this.CustomWordForm_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CustomWordForm_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

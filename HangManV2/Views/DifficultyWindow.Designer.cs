@@ -97,7 +97,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(744, 464);
+            this.ClientSize = new System.Drawing.Size(1604, 881);
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.btnImpossible);
             this.Controls.Add(this.btnHard);
@@ -106,6 +106,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "DifficultyWindow";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.DifficultyWindow_Load);
             this.ResumeLayout(false);
 
         }

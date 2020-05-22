@@ -85,7 +85,7 @@
             this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogIn.Image = global::HangManV2.Properties.Resources.LoginButtonForLoginForm;
-            this.btnLogIn.Location = new System.Drawing.Point(758, 434);
+            this.btnLogIn.Location = new System.Drawing.Point(756, 434);
             this.btnLogIn.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogIn.Name = "btnLogIn";
             this.btnLogIn.Size = new System.Drawing.Size(121, 48);
@@ -275,19 +275,25 @@
             // lblPassShown
             // 
             this.lblPassShown.AutoSize = true;
-            this.lblPassShown.Location = new System.Drawing.Point(692, 382);
+            this.lblPassShown.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassShown.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassShown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPassShown.Location = new System.Drawing.Point(687, 381);
             this.lblPassShown.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPassShown.Name = "lblPassShown";
-            this.lblPassShown.Size = new System.Drawing.Size(0, 13);
+            this.lblPassShown.Size = new System.Drawing.Size(0, 34);
             this.lblPassShown.TabIndex = 133;
             // 
             // lblUserNameShown
             // 
             this.lblUserNameShown.AutoSize = true;
-            this.lblUserNameShown.Location = new System.Drawing.Point(688, 208);
+            this.lblUserNameShown.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserNameShown.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserNameShown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblUserNameShown.Location = new System.Drawing.Point(683, 195);
             this.lblUserNameShown.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserNameShown.Name = "lblUserNameShown";
-            this.lblUserNameShown.Size = new System.Drawing.Size(0, 13);
+            this.lblUserNameShown.Size = new System.Drawing.Size(0, 35);
             this.lblUserNameShown.TabIndex = 132;
             // 
             // btnNext
@@ -671,19 +677,25 @@
             // lblPaassword
             // 
             this.lblPaassword.AutoSize = true;
-            this.lblPaassword.Location = new System.Drawing.Point(692, 389);
+            this.lblPaassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPaassword.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPaassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblPaassword.Location = new System.Drawing.Point(687, 388);
             this.lblPaassword.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPaassword.Name = "lblPaassword";
-            this.lblPaassword.Size = new System.Drawing.Size(0, 13);
+            this.lblPaassword.Size = new System.Drawing.Size(0, 34);
             this.lblPaassword.TabIndex = 102;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(692, 208);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft New Tai Lue", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(687, 195);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.Size = new System.Drawing.Size(0, 35);
             this.label1.TabIndex = 101;
             // 
             // btnGoBack

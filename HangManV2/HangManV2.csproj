@@ -311,6 +311,10 @@
       <DependentUpon>HangMan.edmx</DependentUpon>
       <LastGenOutput>HangMan.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\Form1BackgroundProject2.png" />
+    <None Include="Resources\RegisterButton2.png" />
+    <None Include="Resources\RegisterButton.png" />
+    <None Include="Resources\CustomWordFormDoneButton.png" />
     <None Include="Resources\Starting form almost2.png" />
     <None Include="Resources\signUpButton.png" />
     <None Include="Resources\SignUp button.png" />

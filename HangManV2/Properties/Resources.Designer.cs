@@ -553,6 +553,16 @@ namespace HangManV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CustomWordFormDoneButton {
+            get {
+                object obj = ResourceManager.GetObject("CustomWordFormDoneButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CustomWordPlayButton {
             get {
                 object obj = ResourceManager.GetObject("CustomWordPlayButton", resourceCulture);
@@ -616,6 +626,16 @@ namespace HangManV2.Properties {
         internal static System.Drawing.Bitmap Form1BackgroundProject {
             get {
                 object obj = ResourceManager.GetObject("Form1BackgroundProject", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Form1BackgroundProject2 {
+            get {
+                object obj = ResourceManager.GetObject("Form1BackgroundProject2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -726,6 +746,26 @@ namespace HangManV2.Properties {
         internal static System.Drawing.Bitmap RankingButton {
             get {
                 object obj = ResourceManager.GetObject("RankingButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RegisterButton {
+            get {
+                object obj = ResourceManager.GetObject("RegisterButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RegisterButton2 {
+            get {
+                object obj = ResourceManager.GetObject("RegisterButton2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -19,7 +19,8 @@ namespace HangManV2
         public Form1()
         {
             InitializeComponent();
-            lblUserShown.Text = "user: " + CurrentUser.username + " points: " + CurrentUser.poitAmount.ToString();
+            userLabel.Text = CurrentUser.username;
+            pointsLabel.Text= CurrentUser.poitAmount.ToString();
         }
         /// <summary>
         /// The method opens a dificulty selection window and closes the menu
@@ -101,6 +102,18 @@ namespace HangManV2
                     this.Close();
                 }
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
+
+        private void userLabel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

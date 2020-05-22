@@ -507,5 +507,12 @@ namespace HangManV2.Views
             
            // lblPassShown.Text = hiddenPass;
         }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
     }
 }
