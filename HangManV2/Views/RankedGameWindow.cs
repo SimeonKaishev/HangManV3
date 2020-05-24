@@ -35,6 +35,9 @@ namespace HangManV2.Views
         {
             int a = timer.GetPoits();
             playedChars = new List<char>();
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
         }
         public void UpdateWord()
         {

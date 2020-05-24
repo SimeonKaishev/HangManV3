@@ -278,5 +278,12 @@ namespace HangManV2.Views
             window.ShowDialog();
             this.Close();
         }
+
+        private void WordInsertionForm_Load(object sender, EventArgs e)
+        {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+        }
     }
 }

@@ -117,12 +117,12 @@
             // 
             this.btnTeams.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTeams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnTeams.Image = global::HangManV2.Properties.Resources.TeamsButton;
             this.btnTeams.Location = new System.Drawing.Point(761, 624);
             this.btnTeams.Margin = new System.Windows.Forms.Padding(2);
             this.btnTeams.Name = "btnTeams";
             this.btnTeams.Size = new System.Drawing.Size(199, 78);
             this.btnTeams.TabIndex = 6;
-            this.btnTeams.Text = "Teams";
             this.btnTeams.UseVisualStyleBackColor = false;
             this.btnTeams.Click += new System.EventHandler(this.btnTeams_Click);
             // 

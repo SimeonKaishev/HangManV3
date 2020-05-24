@@ -340,4 +340,64 @@
   <data name="RegisterButton2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RegisterButton2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="BackArrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BackArrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DifficultyWindowBackGround2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DifficultyWindowBackGround2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GameWindowBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GameWindowBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoTeamCreateButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoTeamCreateButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoTeamFormBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoTeamFormBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NoTeamJoinButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\NoTeamJoinButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TeamsButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TeamsButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="WordInsertionAddButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\WordInsertionAddButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="leftArm2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\leftArm2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LEFTLEG22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LEFTLEG22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RankingBackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RankingBackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RankingFormBackground3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RankingFormBackground3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rightArm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rightArm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rightLeg5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rightLeg5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrong1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrong1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrong2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrong2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrong3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrong3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrong4_3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrong4.3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="wrong5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\wrong5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
