@@ -451,13 +451,15 @@
             // 
             // btnGoBack
             // 
-            this.btnGoBack.Location = new System.Drawing.Point(8, 8);
+            this.btnGoBack.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnGoBack.Image = global::HangManV2.Properties.Resources.BackArrow;
+            this.btnGoBack.Location = new System.Drawing.Point(37, 36);
             this.btnGoBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(50, 20);
+            this.btnGoBack.Size = new System.Drawing.Size(45, 45);
             this.btnGoBack.TabIndex = 138;
-            this.btnGoBack.Text = "back";
-            this.btnGoBack.UseVisualStyleBackColor = true;
+            this.btnGoBack.UseVisualStyleBackColor = false;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // CustomWordForm

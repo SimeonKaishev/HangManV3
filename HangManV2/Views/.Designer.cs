@@ -44,10 +44,10 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Image = global::HangManV2.Properties.Resources.playButton;
-            this.button1.Location = new System.Drawing.Point(1015, 364);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(761, 296);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 96);
+            this.button1.Size = new System.Drawing.Size(199, 78);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -57,10 +57,10 @@
             this.btnCustom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnCustom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCustom.Image = global::HangManV2.Properties.Resources.CustomButton;
-            this.btnCustom.Location = new System.Drawing.Point(1015, 465);
-            this.btnCustom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCustom.Location = new System.Drawing.Point(761, 378);
+            this.btnCustom.Margin = new System.Windows.Forms.Padding(2);
             this.btnCustom.Name = "btnCustom";
-            this.btnCustom.Size = new System.Drawing.Size(265, 96);
+            this.btnCustom.Size = new System.Drawing.Size(199, 78);
             this.btnCustom.TabIndex = 1;
             this.btnCustom.UseVisualStyleBackColor = false;
             this.btnCustom.Click += new System.EventHandler(this.btnCustom_Click);
@@ -68,9 +68,10 @@
             // lblUserShown
             // 
             this.lblUserShown.AutoSize = true;
-            this.lblUserShown.Location = new System.Drawing.Point(351, 63);
+            this.lblUserShown.Location = new System.Drawing.Point(263, 51);
+            this.lblUserShown.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblUserShown.Name = "lblUserShown";
-            this.lblUserShown.Size = new System.Drawing.Size(0, 17);
+            this.lblUserShown.Size = new System.Drawing.Size(0, 13);
             this.lblUserShown.TabIndex = 2;
             // 
             // btnAddWord
@@ -78,10 +79,10 @@
             this.btnAddWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnAddWord.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddWord.Image = global::HangManV2.Properties.Resources.AddWordButton;
-            this.btnAddWord.Location = new System.Drawing.Point(1015, 566);
-            this.btnAddWord.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAddWord.Location = new System.Drawing.Point(761, 460);
+            this.btnAddWord.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddWord.Name = "btnAddWord";
-            this.btnAddWord.Size = new System.Drawing.Size(265, 96);
+            this.btnAddWord.Size = new System.Drawing.Size(199, 78);
             this.btnAddWord.TabIndex = 3;
             this.btnAddWord.UseVisualStyleBackColor = false;
             this.btnAddWord.Click += new System.EventHandler(this.btnAddWord_Click);
@@ -91,10 +92,10 @@
             this.btnLogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogOut.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnLogOut.Image = global::HangManV2.Properties.Resources.logOutButton;
-            this.btnLogOut.Location = new System.Drawing.Point(1015, 869);
-            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOut.Location = new System.Drawing.Point(761, 706);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogOut.Name = "btnLogOut";
-            this.btnLogOut.Size = new System.Drawing.Size(265, 96);
+            this.btnLogOut.Size = new System.Drawing.Size(199, 78);
             this.btnLogOut.TabIndex = 4;
             this.btnLogOut.UseVisualStyleBackColor = false;
             this.btnLogOut.Click += new System.EventHandler(this.btnLogOut_Click);
@@ -104,10 +105,10 @@
             this.btnRanking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnRanking.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRanking.Image = global::HangManV2.Properties.Resources.RankingButton;
-            this.btnRanking.Location = new System.Drawing.Point(1015, 667);
-            this.btnRanking.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRanking.Location = new System.Drawing.Point(761, 542);
+            this.btnRanking.Margin = new System.Windows.Forms.Padding(2);
             this.btnRanking.Name = "btnRanking";
-            this.btnRanking.Size = new System.Drawing.Size(265, 96);
+            this.btnRanking.Size = new System.Drawing.Size(199, 78);
             this.btnRanking.TabIndex = 5;
             this.btnRanking.UseVisualStyleBackColor = false;
             this.btnRanking.Click += new System.EventHandler(this.btnRanking_Click);
@@ -116,12 +117,12 @@
             // 
             this.btnTeams.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnTeams.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTeams.Location = new System.Drawing.Point(1015, 768);
-            this.btnTeams.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTeams.Image = global::HangManV2.Properties.Resources.TeamsButton;
+            this.btnTeams.Location = new System.Drawing.Point(761, 624);
+            this.btnTeams.Margin = new System.Windows.Forms.Padding(2);
             this.btnTeams.Name = "btnTeams";
-            this.btnTeams.Size = new System.Drawing.Size(265, 96);
+            this.btnTeams.Size = new System.Drawing.Size(199, 78);
             this.btnTeams.TabIndex = 6;
-            this.btnTeams.Text = "Teams";
             this.btnTeams.UseVisualStyleBackColor = false;
             this.btnTeams.Click += new System.EventHandler(this.btnTeams_Click);
             // 
@@ -131,10 +132,9 @@
             this.userLabel.BackColor = System.Drawing.Color.Transparent;
             this.userLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.userLabel.Location = new System.Drawing.Point(249, 63);
-            this.userLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.userLabel.Location = new System.Drawing.Point(187, 51);
             this.userLabel.Name = "userLabel";
-            this.userLabel.Size = new System.Drawing.Size(0, 34);
+            this.userLabel.Size = new System.Drawing.Size(0, 27);
             this.userLabel.TabIndex = 7;
             this.userLabel.Click += new System.EventHandler(this.userLabel_Click);
             // 
@@ -144,18 +144,17 @@
             this.pointsLabel.BackColor = System.Drawing.Color.Transparent;
             this.pointsLabel.Font = new System.Drawing.Font("Microsoft Tai Le", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pointsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.pointsLabel.Location = new System.Drawing.Point(249, 144);
-            this.pointsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.pointsLabel.Location = new System.Drawing.Point(187, 117);
             this.pointsLabel.Name = "pointsLabel";
-            this.pointsLabel.Size = new System.Drawing.Size(0, 34);
+            this.pointsLabel.Size = new System.Drawing.Size(0, 27);
             this.pointsLabel.TabIndex = 8;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HangManV2.Properties.Resources.Form1BackgroundProject2;
-            this.ClientSize = new System.Drawing.Size(2139, 1084);
+            this.ClientSize = new System.Drawing.Size(1604, 881);
             this.Controls.Add(this.pointsLabel);
             this.Controls.Add(this.userLabel);
             this.Controls.Add(this.btnTeams);
@@ -165,7 +164,7 @@
             this.Controls.Add(this.lblUserShown);
             this.Controls.Add(this.btnCustom);
             this.Controls.Add(this.button1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -183,8 +182,8 @@
         private System.Windows.Forms.Button btnLogOut;
         private System.Windows.Forms.Button btnRanking;
         private System.Windows.Forms.Button btnTeams;
+        private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.Label pointsLabel;
-        public System.Windows.Forms.Label userLabel;
     }
 }
 

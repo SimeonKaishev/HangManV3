@@ -310,6 +310,26 @@
       <DependentUpon>HangMan.edmx</DependentUpon>
       <LastGenOutput>HangMan.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\RankingBackground.png" />
+    <None Include="Resources\RankingFormBackground3.png" />
+    <None Include="Resources\wrong5.png" />
+    <None Include="Resources\wrong4.3.png" />
+    <None Include="Resources\wrong3.png" />
+    <None Include="Resources\wrong2.png" />
+    <None Include="Resources\wrong1.png" />
+    <None Include="Resources\rightLeg5.png" />
+    <None Include="Resources\rightArm.png" />
+    <None Include="Resources\LEFTLEG22.png" />
+    <None Include="Resources\leftArm2.png" />
+    <None Include="Resources\GameBackground.png" />
+    <None Include="Resources\GameWindowBackground.png" />
+    <None Include="Resources\DifficultyWindowBackGround2.png" />
+    <None Include="Resources\NoTeamJoinButton.png" />
+    <None Include="Resources\NoTeamCreateButton.png" />
+    <None Include="Resources\NoTeamFormBackground.png" />
+    <None Include="Resources\WordInsertionAddButton.png" />
+    <None Include="Resources\BackArrow.png" />
+    <None Include="Resources\TeamsButton.png" />
     <None Include="Resources\Form1BackgroundProject2.png" />
     <None Include="Resources\RegisterButton2.png" />
     <None Include="Resources\RegisterButton.png" />

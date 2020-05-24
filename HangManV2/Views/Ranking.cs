@@ -29,12 +29,24 @@ namespace HangManV2.Views
         /// <param name="place">integer conatining the overall position of the current user.</param>
         private void Ranking_Load(object sender, EventArgs e)
         {
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+
             RankingContext.Refresh();
             List<user> topPlayers = RankingContext.GetTopPlayersList();
             int counter = 1;
             foreach (var item in topPlayers)
             {
-                lBoxRanking.Items.Add("#"+counter.ToString()+" "+item.Username+" - "+item.PointAmount+" points");
+                if (item.Username.Length>5&&item.Username.Length<8)
+                {
+                    lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "   ->      " + item.PointAmount + " pts");
+                }
+                if (item.Username.Length >=8)
+                {
+                    lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + " ->      " + item.PointAmount + " pts");
+                }
+                else lBoxRanking.Items.Add(" #"+counter.ToString()+" "+item.Username+"      ->      "+item.PointAmount+" pts");
                 counter++; 
             }
             int place = RankingContext.GetPlayerPosition();
@@ -45,7 +57,7 @@ namespace HangManV2.Views
             {
                 if (item.TeamId != 1)
                 {
-                    lbTeamsShow.Items.Add("#" + counter2.ToString() + " " + item.TeamName + " - " + item.TeamPointAmount + " points");
+                    lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "      ->      " + item.TeamPointAmount + " pts");
                     counter2++;
                 }
             }
@@ -60,6 +72,16 @@ namespace HangManV2.Views
             var window = new Form1();
             window.ShowDialog();
             this.Close();
+        }
+
+        private void lbTeamsShow_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lBoxRanking_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
