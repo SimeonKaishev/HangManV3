@@ -46,6 +46,9 @@ namespace HangManV2.Views
             WindowState = FormWindowState.Maximized;
             TopMost = true;
         }
+        /// <summary>
+        /// This method closes the program
+        /// </summary>
 
         private void button1_Click(object sender, EventArgs e)
         {
