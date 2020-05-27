@@ -48,10 +48,14 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomWordFormViewTest.cs" />
     <Compile Include="GamePlayBussTest.cs" />
     <Compile Include="LogInBussTests.cs" />
+    <Compile Include="LogInViewTest.cs" />
+    <Compile Include="MenuTest.cs" />
     <Compile Include="RankingBussTest.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

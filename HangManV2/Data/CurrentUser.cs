@@ -13,7 +13,7 @@ namespace HangManV2.Data
      /// <param name="username">string value of users username </param>
      /// <param name="pointAmount">integer value of users points</param>
      /// /// <param name="teamId">integer value  of users team id</param>
-    static class CurrentUser
+    static public class CurrentUser
     {
         public static int id { get; set; }
         public static string username { get; set; }

@@ -20,13 +20,13 @@ namespace HangManV2.Views
      /// <param name="hiddenWord">String containing the word currently in play but in asteriscs</param>
     public partial class CustomWordForm : Form, IKeyboardBasic, IKeybaord
     {
-        private string word;
-        private string hiddenWord;
+        public string Word { get; set; }
+        public string HiddenWord { get; set; }
         public CustomWordForm()
         {
             InitializeComponent();
-            this.word = "";
-            this.hiddenWord = "";
+            this.Word = "";
+            this.HiddenWord = "";
             lblHiddenWord.Text = "";
         }
         /// <summary>
@@ -37,11 +37,11 @@ namespace HangManV2.Views
         {
             try
             {
-                CustomWordBussiness.CheckIfWordPlayable(word);
-                this.hiddenWord = this.hiddenWord.Substring(0, hiddenWord.Length - 1) + this.word[this.word.Length - 1];
+                CustomWordBussiness.CheckIfWordPlayable(Word);
+                this.HiddenWord = this.HiddenWord.Substring(0, HiddenWord.Length - 1) + this.Word[this.Word.Length - 1];
                 UpdateLbl();
                 this.Hide();
-                var window = new GameWindow(word,1);
+                var window = new GameWindow(Word,1);
                 window.ShowDialog();
                 this.Close();
             }
@@ -64,14 +64,14 @@ namespace HangManV2.Views
         /// </example>
     public void ButtonClicked(char letter)
         {
-            this.word = this.word += letter;
-            if (hiddenWord=="")
+            this.Word = this.Word += letter;
+            if (HiddenWord=="")
             {
-                this.hiddenWord = this.hiddenWord += letter;
+                this.HiddenWord = this.HiddenWord += letter;
             }
             else
             {
-                this.hiddenWord = this.hiddenWord += '_';
+                this.HiddenWord = this.HiddenWord += '_';
             }
             UpdateLbl();
         }
@@ -83,9 +83,9 @@ namespace HangManV2.Views
         /// UpdateLbl();
         /// </code>
         /// </example>
-        private void UpdateLbl()
+        public void UpdateLbl()
         {
-            lblHiddenWord.Text = this.hiddenWord;
+            lblHiddenWord.Text = this.HiddenWord;
         }
         #region keyboard
         public void btnQ_Click(object sender, EventArgs e)
@@ -240,10 +240,10 @@ namespace HangManV2.Views
         /// </example>
         public void Backspace()
         {
-            if (this.word.Length > 0)
+            if (this.Word.Length > 0)
             {
-                this.word = this.word.Substring(0, word.Length - 1);
-                this.hiddenWord = this.hiddenWord.Substring(0, hiddenWord.Length - 1);
+                this.Word = this.Word.Substring(0, Word.Length - 1);
+                this.HiddenWord = this.HiddenWord.Substring(0, HiddenWord.Length - 1);
                 UpdateLbl();
             }
         }
@@ -259,6 +259,10 @@ namespace HangManV2.Views
         private void CustomWordForm_KeyDown(object sender, KeyEventArgs e)
         {
             string imput = e.KeyCode.ToString();
+            RecognizeKeyBoard(imput);
+        }
+        public void RecognizeKeyBoard(string imput)
+        {
             if (imput == "Space")
             {
                 ButtonClicked('_');

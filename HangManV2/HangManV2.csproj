@@ -94,6 +94,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commons\KeyboardRecognizer.cs" />
     <Compile Include="Commons\TimerForPoints.cs" />
     <Compile Include="Controller\CustomWordBussiness.cs" />
     <Compile Include="Controller\RankingContext.cs" />
@@ -297,9 +298,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Tests\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Data\HangMan.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
