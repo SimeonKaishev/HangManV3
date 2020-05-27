@@ -16,6 +16,6 @@ namespace HangManV2.Data
         { 
         
         }
-       public DbSet<team> Teams { get; set; }
+       public DbSet<Team> Teams { get; set; }
     }
 }

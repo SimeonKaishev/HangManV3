@@ -96,7 +96,7 @@ namespace HangManV2.Context
             using (var dbcontext = new TeamContext())
             {
                 RemovePointsFromOldTeam();
-                team newTeam = new team();
+                Team newTeam = new Team();
                 newTeam.TeamName = ImputTeamName;
                 newTeam.TeamPointAmount = CurrentUser.poitAmount;
                 dbcontext.Teams.Add(newTeam);
@@ -139,11 +139,13 @@ namespace HangManV2.Context
         /// var ListOfTeams = GetListOfTeams();
         /// </code>
         /// </example>
-        public static List<team> GetListOfTeams()
+        public static List<Team> GetListOfTeams()
         {
             using (var dbcontext = new TeamContext())
             {
-                var listOfAllTeams = (from t in dbcontext.Teams orderby t.TeamPointAmount descending select t).ToList();
+                var listOfAllTeams = (from t in dbcontext.Teams 
+                                      orderby t.TeamPointAmount 
+                                      descending select t).ToList();
                 return listOfAllTeams;
             }
         }
@@ -158,10 +160,10 @@ namespace HangManV2.Context
         ///  GetListOfTeams();
         /// </code>
         /// </example>
-        public static Dictionary<team, int> GetTeamsAndNumOfMembers()
+        public static Dictionary<Team, int> GetTeamsAndNumOfMembers()
         {
             var ListOfTeams = GetListOfTeams();
-            Dictionary<team, int> TeamsAndNumOfMem = new Dictionary<team, int>();
+            Dictionary<Team, int> TeamsAndNumOfMem = new Dictionary<Team, int>();
             using (var dbcontext = new UserContext())
             { 
               foreach (var item in ListOfTeams)
@@ -212,7 +214,7 @@ namespace HangManV2.Context
         public static string[] GetTeamInfo()
         {
             string[] teamInfo = new string[5];
-            team myTeam;
+            Team myTeam;
             using (var dbcontext = new TeamContext())
             {
                 myTeam = dbcontext.Teams.Find(CurrentUser.teamId);
@@ -244,7 +246,7 @@ namespace HangManV2.Context
         /// </example>
         private static string GetUserPLaceInTeam()
         {
-            List<user> playersByPoints = new List<user>();
+            List<User> playersByPoints = new List<User>();
             using (var dbcontext = new UserContext())
             {
                 playersByPoints = (from user in dbcontext.Users
@@ -274,9 +276,9 @@ namespace HangManV2.Context
         ///  TeamBusiness.GetUserPLaceInTeam();
         /// </code>
         /// </example>
-        public static List<user> GetAllUsersInTeam()
+        public static List<User> GetAllUsersInTeam()
         {
-            List<user> playersByPoints = new List<user>();
+            List<User> playersByPoints = new List<User>();
             using (var dbcontext = new UserContext())
             {
                 playersByPoints = (from user in dbcontext.Users

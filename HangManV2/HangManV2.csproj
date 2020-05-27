@@ -281,6 +281,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>HangMan.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Data\HangMan.edmx.diagram">
       <DependentUpon>HangMan.edmx</DependentUpon>
     </None>

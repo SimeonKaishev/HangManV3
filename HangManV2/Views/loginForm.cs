@@ -22,17 +22,17 @@ namespace HangManV2.Views
     /// <param name="usedLabel">String containing the currently used label.</param>
     public partial class LoginForm : Form, IKeybaord, IKeyboardBasic, IKeyboardFull
     {
-        private string username;
-        private string hiddenPass;
+        public string Username { get; set; }
+        public string HiddenPass { get; set; }
         private string pass;
-        private string usedLabel;
+        public string UsedLabel { get; set; }
         public LoginForm()
         {
             InitializeComponent();
             this.pass = "";
-            this.usedLabel = "username";
-            this.username = "";
-            this.hiddenPass = "";
+            this.UsedLabel = "username";
+            this.Username = "";
+            this.HiddenPass = "";
         }
         /// <summary>
         /// The method logs the user in
@@ -41,7 +41,7 @@ namespace HangManV2.Views
         {
             try
             {
-                LoginBusiness.LogIn(username, pass);
+                LoginBusiness.LogIn(Username, pass);
                 this.Hide();
                 var window = new Form1();
                 window.ShowDialog();
@@ -71,10 +71,10 @@ namespace HangManV2.Views
         /// UpdateLables();
         /// </code>
         /// </example>
-        private void UpdateLables()
+        public void UpdateLables()
         {
-            lblUserNameShown.Text = username;
-            lblPassShown.Text = hiddenPass;
+            lblUserNameShown.Text = Username;
+            lblPassShown.Text = HiddenPass;
         }
         /// <summary>
         /// The method checks if capsLock is active and if it is makes recieved the char uppercase
@@ -100,19 +100,19 @@ namespace HangManV2.Views
                  /// </example>
         public void Backspace()
         {
-            switch (usedLabel)
+            switch (UsedLabel)
             {
                 case "username":
-                    if (this.username.Length > 0)
+                    if (this.Username.Length > 0)
                     {
-                        this.username = this.username.Substring(0, username.Length - 1);
+                        this.Username = this.Username.Substring(0, Username.Length - 1);
                         //lblUserNameShown.Text = username;
                     }
                     break;
                 case "pass":
                     if (this.pass.Length > 0)
                     {
-                        this.hiddenPass = this.hiddenPass.Substring(0, hiddenPass.Length - 1);
+                        this.HiddenPass = this.HiddenPass.Substring(0, HiddenPass.Length - 1);
                         // lblPassShown.Text = hiddenPass;
                         this.pass = this.pass.Substring(0, pass.Length - 1);
                     }
@@ -140,13 +140,13 @@ namespace HangManV2.Views
         {
             char checkedLetter;
             CheckIfUpper(value, out checkedLetter);
-            switch (usedLabel)
+            switch (UsedLabel)
             {
                 case "username":
-                    this.username += checkedLetter;
+                    this.Username += checkedLetter;
                     break;
                 case "pass":
-                    this.hiddenPass += '*';
+                    this.HiddenPass += '*';
                     this.pass += checkedLetter;
                     break;
             }
@@ -316,22 +316,33 @@ namespace HangManV2.Views
         /// </summary>
         private void btnBack_Click(object sender, EventArgs e)
         {
-            usedLabel = "username";
-            btnBack.Enabled = false;
-            btnNext.Enabled = true;
-            lblPassPoint.Visible = false;
-            lblUsrPoint.Visible = true;
+            SwitchImputPlace();
         }
         /// <summary>
         /// The method the used label to the one used for the password
         /// </summary>
-        private void btnNext_Click(object sender, EventArgs e)
+        public void btnNext_Click(object sender, EventArgs e)
         {
-            usedLabel = "pass";
-            btnBack.Enabled = true;
-            btnNext.Enabled = false;
-            lblPassPoint.Visible = true;
-            lblUsrPoint.Visible = false;
+            SwitchImputPlace();
+        }
+        public void SwitchImputPlace()
+        {
+            if (UsedLabel == "username")
+            {
+                UsedLabel = "pass";
+                btnBack.Enabled = true;
+                btnNext.Enabled = false;
+                lblPassPoint.Visible = true;
+                lblUsrPoint.Visible = false;
+            }
+            else
+            {
+                UsedLabel = "username";
+                btnBack.Enabled = false;
+                btnNext.Enabled = true;
+                lblPassPoint.Visible = false;
+                lblUsrPoint.Visible = true;
+            }
         }
         public void btn1_Click(object sender, EventArgs e)
         {
@@ -474,6 +485,10 @@ namespace HangManV2.Views
         /// Shows the password in place of the hidden password
         /// </summary>
         private void btnPeekPass_Click(object sender, EventArgs e)
+        {
+            ShowPass();
+        }
+        public void ShowPass()
         {
             lblPassShown.Text = pass;
         }

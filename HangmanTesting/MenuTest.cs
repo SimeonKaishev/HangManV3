@@ -21,6 +21,14 @@ namespace HangmanTesting
             menuView = new Form1();
             Assert.AreEqual(username, menuView.userLabel.Text);
         }
-
+        [DataTestMethod]
+        [DataRow(69)]
+        [DataRow(420)]
+        public void TestLabelsShowCorrecltPoints(int points)
+        {
+            CurrentUser.poitAmount = points;
+            menuView = new Form1();
+            Assert.AreEqual(points, int.Parse(menuView.pointsLabel.Text));
+        }
     }
 }

@@ -27,7 +27,7 @@ namespace HangManV2.Context
         /// </example>
         /// <exception cref="HangManV2.ContextDoesntExistException.UserDoesntExistExeption">Thrown when the user isn't in the database
         /// </exception>
-        private static void CheckIfUserExists(string imputUsername, out user uzer)
+        private static void CheckIfUserExists(string imputUsername, out User uzer)
         {
             using (var dbcontext = new UserContext())
             {
@@ -56,7 +56,7 @@ namespace HangManV2.Context
         /// </example>
         /// <exception cref="HangManV2.ContextDoesntExistException.UserDoesntExistExeption">Thrown when the user isn't in the database
         /// </exception>
-        public static void CheckIfUsrListEmpty(List<user> users)
+        public static void CheckIfUsrListEmpty(List<User> users)
         {
             if (users.Count == 0)
             {
@@ -78,9 +78,9 @@ namespace HangManV2.Context
         /// </exception>
         public static void LogIn(string imputName, string imputPass)
         {
-            using (var dbcontext = new hangmanEntities())
+            using (var dbcontext = new UserContext())
             {
-                user usr = new user();
+                User usr = new User();
                 try
                 {
                     CheckIfUserExists(imputName, out usr);

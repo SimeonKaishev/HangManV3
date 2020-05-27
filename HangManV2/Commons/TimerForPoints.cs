@@ -38,12 +38,9 @@ namespace HangManV2.Commons
             stopWatch.Stop();
             TimeSpan ts = stopWatch.Elapsed;
             elapsedTime = String.Format("{0:00}:{1:00}", ts.Minutes, ts.Seconds);
-            //return elapsedTime;
-            stopWatch.Restart();
-            // stopWatch.Start();
-            //  return elapsedTime;
             string[] pointsSplit = elapsedTime.Split(':');
             int timeInSec = int.Parse(pointsSplit[1]);
+            stopWatch.Restart();
             if (elapsedTime != "nothing" && pointsSplit[0] == "00")
             {
                 if (timeInSec < 2)

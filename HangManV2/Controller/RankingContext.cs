@@ -12,9 +12,9 @@ namespace HangManV2.Context
     /// This class handles oprations connected with ranking
     /// </summary>
      /// <param name="topUsers">A list of users.</param>
-    public static class RankingContext
+    public static class RankingController
     {
-        private static List<user> topUsers=new List<user>();
+        private static List<User> topUsers=new List<User>();
         /// <summary>
         /// The method returns a list of the top 10 users
         /// </summary>
@@ -26,7 +26,7 @@ namespace HangManV2.Context
         ///  List<user> topPlayers = RankingContext.GetTopPlayersList();
         /// </code>
         /// </example>
-        public static List<user> GetTopPlayersList()
+        public static List<User> GetTopPlayersList()
         {
             return topUsers;
         }
@@ -61,7 +61,7 @@ namespace HangManV2.Context
         /// </example>
         public static int GetPlayerPosition()
         {
-            List<user> playersByPoints = new List<user>();
+            List<User> playersByPoints = new List<User>();
             using (var dbcontext = new UserContext())
             {
                  playersByPoints = (from user in dbcontext.Users
@@ -71,7 +71,7 @@ namespace HangManV2.Context
             
             return GetPlayerPosInList(playersByPoints, CurrentUser.id);
         }
-        public static int GetPlayerPosInList(List<user> listOfUsers,int playerId)
+        public static int GetPlayerPosInList(List<User> listOfUsers,int playerId)
         {
             int counter = 1;
             foreach (var item in listOfUsers)

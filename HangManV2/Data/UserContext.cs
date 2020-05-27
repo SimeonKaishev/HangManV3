@@ -16,6 +16,6 @@ namespace HangManV2.Data
             {
             
             }
-        public DbSet<user> Users { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

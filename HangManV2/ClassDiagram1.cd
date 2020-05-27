@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HangManV2.Commons.Hasher" Collapsed="true">
+    <Position X="15.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAgAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Commons\Hasher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.KeyboardRecognizer" Collapsed="true">
+    <Position X="10.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAABAAAAAAAAAAAACAAAAAAAAAAAAAAAAAACAAgA=</HashCode>
+      <FileName>Commons\KeyboardRecognizer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.TimerForPoints" Collapsed="true">
+    <Position X="15.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAA=</HashCode>
+      <FileName>Commons\TimerForPoints.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.UserAlreadyExistsExeption" Collapsed="true">
+    <Position X="7.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.UserDoesntExistExeption" Collapsed="true">
+    <Position X="10.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.IncorrectPassExeption" Collapsed="true">
+    <Position X="7.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.PassTooShortException" Collapsed="true">
+    <Position X="6.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.IncorectLetterExeption" Collapsed="true">
+    <Position X="13.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.PassDoesntMeetReqExeption" Collapsed="true">
+    <Position X="6.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.UsernameNullExeption" Collapsed="true">
+    <Position X="13.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.WordUnplayableExeption" Collapsed="true">
+    <Position X="9.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.WordAlreadyExistsExeption" Collapsed="true">
+    <Position X="12.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.TeamAlreadyExistsExeption" Collapsed="true">
+    <Position X="9.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.TeamNameNullExeption" Collapsed="true">
+    <Position X="12.25" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Commons.AlreadyInTeamExeption" Collapsed="true">
+    <Position X="10.75" Y="15" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Exeptions\Exeptions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.CustomWordBussiness">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controller\CustomWordBussiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.GamePlayBusiness">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAACAAIAAAQAAAAAgAACAAABAAAAAAAA=</HashCode>
+      <FileName>Controller\GamePlayBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.LoginBusiness">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAACA=</HashCode>
+      <FileName>Controller\LoginBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.RankingController">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAABAAAABAAAAAAAAAAAAAAAAAAAAQAAIAAA=</HashCode>
+      <FileName>Controller\RankingContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.RegisterBusiness">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAgAAAAAAAAAAAAAAAAAAgAAAAEAAAAAACEA=</HashCode>
+      <FileName>Controller\RegisterBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.TeamBusiness">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAkQCAAAAAIAAAEAACAAAAAAEAAAIAAAAAAAEAAAABA=</HashCode>
+      <FileName>Controller\TeamContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.WordAddBusiness">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAACAAAAAAAAAAAgAAAAAAAQAAAAAAAAEAAAA=</HashCode>
+      <FileName>Controller\WordAddBusiness.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Context.WordChooser">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Controller\WordChooser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.CurrentUser" Collapsed="true">
+    <Position X="8.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgAEAAAAAAAEAAAAAAgAAAAAAAABAAxA=</HashCode>
+      <FileName>Data\CurrentUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.hangmanEntities" Collapsed="true">
+    <Position X="9" Y="17" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAgAAAAAAAAAAAAAEAAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Data\HangMan.Context.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.Team" Collapsed="true">
+    <Position X="5.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAABAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\team.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.User" Collapsed="true">
+    <Position X="8.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAQAAAAACAgAQAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Data\user.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.Word" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\word.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.TeamContext" Collapsed="true">
+    <Position X="5.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\TeamContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.UserContext" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\UserContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Data.WordContext" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Data\WordContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Properties.Resources" Collapsed="true">
+    <Position X="15.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wCAJNmolBAAkmy4CCQHrHYZYQQAMDwMY6ItaAQJcF4A=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Properties.Settings" Collapsed="true">
+    <Position X="12.25" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.CustomWordForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEMAgQAAACAAAACCAJSAARBy9P/vD4AC+P//HwCAAgA=</HashCode>
+      <FileName>Views\CustomWordForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Views.DifficultyWindow" Collapsed="true">
+    <Position X="4" Y="9" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAIACAABAAAAACACAADBABAQAAAAIAAAAAAAAQ=</HashCode>
+      <FileName>Views\DifficultyWindow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.GameWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>SAAAJIAAACAAKAAAAAyhAQBy8v/vTwBA+P//HwAAAkA=</HashCode>
+      <FileName>Views\GameWindow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Views.LoginForm" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAgfB/ACkKABAFAYiAwJB+9P/vDwJC+P//HwCw8g8=</HashCode>
+      <FileName>Views\LoginForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Views.NoTeamForm" Collapsed="true">
+    <Position X="12.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUAAACAAARAAAAGAAAACFAAAAAAAgBAAAAAAAAA=</HashCode>
+      <FileName>Views\NoTeamForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.RankedGameWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>WASAJICBACAAKAAAAAyhAQBy8v/vTwBA+P//HwAAAgA=</HashCode>
+      <FileName>Views\RankedGameWindow.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Views.Ranking">
+    <Position X="9.25" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAGAAABAAQACIAIBDAAAAAABAAAAAAAgAAAA=</HashCode>
+      <FileName>Views\Ranking.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.RegisterForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgfA/ACgCQAAFAIiCwJH29P/vDwJC+P//HwCw8k8=</HashCode>
+      <FileName>Views\RegisterForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Views.StartingScreen" Collapsed="true">
+    <Position X="0.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAACAAAAAAAACAAAAKCAAIAAAAgEAAAAAAAAA=</HashCode>
+      <FileName>Views\StartingScreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.TeamCreateForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAfA/ACgSAAAAAIGAQABy9P/vHwAC+P//HwCw8g8=</HashCode>
+      <FileName>Views\TeamCreateForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Views.TeamInfoForm" Collapsed="true">
+    <Position X="12.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCUAAACAAgAAAgAGAAAQGBAAEAAAAAIAAAAAEQAA=</HashCode>
+      <FileName>Views\TeamInfoForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.TeamJoinForm" Collapsed="true">
+    <Position X="14" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IQEAAQAAACABAgAAAACAAAACBEA4hCAAwBAAAAAAAEA=</HashCode>
+      <FileName>Views\TeamJoinForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Views.WordInsertionForm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>BAAAAQABADAAAAQAAJCAAABy9P/vDwAC+P//HwCAggA=</HashCode>
+      <FileName>Views\WordInsertionForm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="HangManV2.Form1" Collapsed="true">
+    <Position X="2.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>KAAAAAACgiCAAAQAJACCAAACAAAIAAAAAEQAAAIEgAA=</HashCode>
+      <FileName>Views\Form1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HangManV2.Program" Collapsed="true">
+    <Position X="13.75" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Views\Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HangManV2.InterfacesFolder.IGame" Collapsed="true">
+    <Position X="4.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAQAAAAAAAABAAAAQAAAAAAA=</HashCode>
+      <FileName>InterfacesFolder\IGame.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HangManV2.InterfacesFolder.IKeybaord" Collapsed="true">
+    <Position X="6" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+P//HwAAAgA=</HashCode>
+      <FileName>InterfacesFolder\IKeybaord.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HangManV2.InterfacesFolder.IKeyboardBasic" Collapsed="true">
+    <Position X="7.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAACAAAA=</HashCode>
+      <FileName>InterfacesFolder\IKeyboardBasic.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HangManV2.InterfacesFolder.IKeyboardFull" Collapsed="true">
+    <Position X="9.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAPA/AAACAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InterfacesFolder\IKeyboardFull.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

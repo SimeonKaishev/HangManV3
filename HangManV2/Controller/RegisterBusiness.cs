@@ -173,14 +173,14 @@ namespace HangManV2.Context
             {
                 throw new PassDoesntMeetReqExeption();
             }
-            using (var dbcontext = new hangmanEntities())
+            using (var dbcontext = new UserContext())
             {
-                user usr = new user();
+                User usr = new User();
                 usr.Username = imputUsername;
                 usr.Password = Hasher.GetHash(imputPass);
                 usr.TeamId = 1;
                 usr.PointAmount = 0;
-                dbcontext.users.Add(usr);
+                dbcontext.Users.Add(usr);
                 dbcontext.SaveChanges();
                 CurrentUser.id = usr.Id;
                 CurrentUser.username = usr.Username;

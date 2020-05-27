@@ -26,7 +26,7 @@ namespace HangManV2.Views
             lblTeamMembers.Text += " " + teamInfo[2];
             lblTeamAvgPoints.Text += " " + teamInfo[3];
             lblPlayerPlace.Text += " " + teamInfo[4]+" in this team";
-            List < user > listOfUsers= TeamBusiness.GetAllUsersInTeam();
+            List < User > listOfUsers= TeamBusiness.GetAllUsersInTeam();
             foreach (var item in listOfUsers)
             {
                 dgUsersInTeam.Rows.Add(item.Username,item.PointAmount);

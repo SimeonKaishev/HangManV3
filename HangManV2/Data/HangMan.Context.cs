@@ -25,8 +25,8 @@ namespace HangManV2.Data
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<team> teams { get; set; }
-        public virtual DbSet<user> users { get; set; }
-        public virtual DbSet<word> words { get; set; }
+        public virtual DbSet<Team> teams { get; set; }
+        public virtual DbSet<User> users { get; set; }
+        public virtual DbSet<Word> words { get; set; }
     }
 }
