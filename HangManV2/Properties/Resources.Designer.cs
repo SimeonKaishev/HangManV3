@@ -93,6 +93,36 @@ namespace HangManV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AveragePoints {
+            get {
+                object obj = ResourceManager.GetObject("AveragePoints", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AVgPoints {
+            get {
+                object obj = ResourceManager.GetObject("AVgPoints", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap AvgPoints2 {
+            get {
+                object obj = ResourceManager.GetObject("AvgPoints2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackArrow {
             get {
                 object obj = ResourceManager.GetObject("BackArrow", resourceCulture);
@@ -553,6 +583,26 @@ namespace HangManV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CreateTeam_CreateButton {
+            get {
+                object obj = ResourceManager.GetObject("CreateTeam_CreateButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CreateTeamBackground {
+            get {
+                object obj = ResourceManager.GetObject("CreateTeamBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap CustomButton {
             get {
                 object obj = ResourceManager.GetObject("CustomButton", resourceCulture);
@@ -606,6 +656,16 @@ namespace HangManV2.Properties {
         internal static System.Drawing.Bitmap DifficultyWindowBackGround2 {
             get {
                 object obj = ResourceManager.GetObject("DifficultyWindowBackGround2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap EasyButton {
+            get {
+                object obj = ResourceManager.GetObject("EasyButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -676,6 +736,26 @@ namespace HangManV2.Properties {
         internal static System.Drawing.Bitmap GameWindowBackground {
             get {
                 object obj = ResourceManager.GetObject("GameWindowBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HardButton {
+            get {
+                object obj = ResourceManager.GetObject("HardButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ImpossibleButton {
+            get {
+                object obj = ResourceManager.GetObject("ImpossibleButton", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -763,6 +843,36 @@ namespace HangManV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap MediumButton {
+            get {
+                object obj = ResourceManager.GetObject("MediumButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Members2 {
+            get {
+                object obj = ResourceManager.GetObject("Members2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap MembersButton {
+            get {
+                object obj = ResourceManager.GetObject("MembersButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NoTeamCreateButton {
             get {
                 object obj = ResourceManager.GetObject("NoTeamCreateButton", resourceCulture);
@@ -833,6 +943,16 @@ namespace HangManV2.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PointsButton {
+            get {
+                object obj = ResourceManager.GetObject("PointsButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap RankingBackground {
             get {
                 object obj = ResourceManager.GetObject("RankingBackground", resourceCulture);
@@ -856,6 +976,16 @@ namespace HangManV2.Properties {
         internal static System.Drawing.Bitmap RankingFormBackground3 {
             get {
                 object obj = ResourceManager.GetObject("RankingFormBackground3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RankingFormBackground4 {
+            get {
+                object obj = ResourceManager.GetObject("RankingFormBackground4", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -926,6 +1056,66 @@ namespace HangManV2.Properties {
         internal static System.Drawing.Bitmap Starting_form_almost2 {
             get {
                 object obj = ResourceManager.GetObject("Starting_form_almost2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SwitchButton {
+            get {
+                object obj = ResourceManager.GetObject("SwitchButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamInfoCreateButton {
+            get {
+                object obj = ResourceManager.GetObject("TeamInfoCreateButton", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamJoinBackground {
+            get {
+                object obj = ResourceManager.GetObject("TeamJoinBackground", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamJoinBackground2_1 {
+            get {
+                object obj = ResourceManager.GetObject("TeamJoinBackground2_1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamJoinBackground2_2 {
+            get {
+                object obj = ResourceManager.GetObject("TeamJoinBackground2_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TeamJoinBackground2_3 {
+            get {
+                object obj = ResourceManager.GetObject("TeamJoinBackground2_3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

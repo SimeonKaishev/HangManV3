@@ -42,14 +42,14 @@
             // 
             this.lBoxRanking.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
             this.lBoxRanking.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lBoxRanking.Font = new System.Drawing.Font("Microsoft Tai Le", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lBoxRanking.Font = new System.Drawing.Font("Microsoft Tai Le", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lBoxRanking.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lBoxRanking.FormattingEnabled = true;
-            this.lBoxRanking.ItemHeight = 51;
+            this.lBoxRanking.ItemHeight = 45;
             this.lBoxRanking.Location = new System.Drawing.Point(179, 267);
             this.lBoxRanking.Margin = new System.Windows.Forms.Padding(2);
             this.lBoxRanking.Name = "lBoxRanking";
-            this.lBoxRanking.Size = new System.Drawing.Size(482, 408);
+            this.lBoxRanking.Size = new System.Drawing.Size(482, 450);
             this.lBoxRanking.TabIndex = 0;
             this.lBoxRanking.SelectedIndexChanged += new System.EventHandler(this.lBoxRanking_SelectedIndexChanged);
             // 
@@ -105,7 +105,7 @@
             this.lbTeamsShow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lbTeamsShow.FormattingEnabled = true;
             this.lbTeamsShow.ItemHeight = 51;
-            this.lbTeamsShow.Location = new System.Drawing.Point(962, 267);
+            this.lbTeamsShow.Location = new System.Drawing.Point(971, 267);
             this.lbTeamsShow.Margin = new System.Windows.Forms.Padding(2);
             this.lbTeamsShow.Name = "lbTeamsShow";
             this.lbTeamsShow.Size = new System.Drawing.Size(482, 408);
@@ -134,7 +134,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::HangManV2.Properties.Resources.RankingBackground;
+            this.BackgroundImage = global::HangManV2.Properties.Resources.RankingFormBackground4;
             this.ClientSize = new System.Drawing.Size(1604, 881);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);

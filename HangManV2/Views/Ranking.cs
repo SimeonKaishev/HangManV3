@@ -38,16 +38,32 @@ namespace HangManV2.Views
             int counter = 1;
             foreach (var item in topPlayers)
             {
-                if (item.Username.Length>5&&item.Username.Length<8)
+                switch(item.Username.Length)
                 {
-                    lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "   ->      " + item.PointAmount + " pts");
+                    case 1: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "               ->        " + item.PointAmount + " pts");
+                        break;
+                    case 2: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "             ->        " + item.PointAmount + " pts");
+                        break;
+                    case 3: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "            ->       " + item.PointAmount + " pts");
+                        break;
+                    case 4: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "        ->        " + item.PointAmount + " pts");
+                        break;
+                    case 5: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "       ->        " + item.PointAmount + " pts");
+                        break;
+                    case 6: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "      ->        " + item.PointAmount + " pts");
+                        break;
+                    case 7: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "    ->        " + item.PointAmount + " pts");
+                        break;
+                    case 8: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "   ->       " + item.PointAmount + " pts");
+                        break;
+                    case 9: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + " ->      " + item.PointAmount + " pts");
+                        break;
+                    case 10: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "->     " + item.PointAmount + " pts");
+                        break;
+                    default: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "  ->     " + item.PointAmount + " pts");
+                        break;
                 }
-                if (item.Username.Length >=8)
-                {
-                    lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + " ->      " + item.PointAmount + " pts");
-                }
-                else lBoxRanking.Items.Add(" #"+counter.ToString()+" "+item.Username+"      ->      "+item.PointAmount+" pts");
-                counter++; 
+               
             }
             int place = RankingContext.GetPlayerPosition();
             lblShowPlace.Text = "You are number " + place.ToString()+" in the univerce";

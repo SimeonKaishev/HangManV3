@@ -35,7 +35,7 @@ namespace HangManV2.Views
         private void btnEasy_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var window = new GameWindow("easy");
+            var window = new RankedGameWindow("easy");
             window.ShowDialog();
             this.Close();
         }
@@ -45,7 +45,7 @@ namespace HangManV2.Views
         private void btnHard_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var window = new GameWindow("hard");
+            var window = new RankedGameWindow("hard");
             window.ShowDialog();
             this.Close();
         }
@@ -55,7 +55,7 @@ namespace HangManV2.Views
         private void btnImpossible_Click(object sender, EventArgs e)
         {
             this.Hide();
-            var window = new GameWindow("impossible");
+            var window = new RankedGameWindow("impossible");
             window.ShowDialog();
             this.Close();
         }

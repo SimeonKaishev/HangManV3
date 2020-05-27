@@ -37,49 +37,57 @@
             // 
             // btnEasy
             // 
+            this.btnEasy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnEasy.Enabled = false;
+            this.btnEasy.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEasy.Image = global::HangManV2.Properties.Resources.EasyButton;
             this.btnEasy.Location = new System.Drawing.Point(761, 352);
             this.btnEasy.Margin = new System.Windows.Forms.Padding(2);
             this.btnEasy.Name = "btnEasy";
             this.btnEasy.Size = new System.Drawing.Size(199, 78);
             this.btnEasy.TabIndex = 0;
-            this.btnEasy.Text = "EZ";
-            this.btnEasy.UseVisualStyleBackColor = true;
+            this.btnEasy.UseVisualStyleBackColor = false;
             this.btnEasy.Click += new System.EventHandler(this.btnEasy_Click);
             // 
             // btnMedium
             // 
+            this.btnMedium.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnMedium.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnMedium.Image = global::HangManV2.Properties.Resources.MediumButton;
             this.btnMedium.Location = new System.Drawing.Point(761, 434);
             this.btnMedium.Margin = new System.Windows.Forms.Padding(2);
             this.btnMedium.Name = "btnMedium";
             this.btnMedium.Size = new System.Drawing.Size(199, 78);
             this.btnMedium.TabIndex = 1;
-            this.btnMedium.Text = "RegularJoe";
-            this.btnMedium.UseVisualStyleBackColor = true;
+            this.btnMedium.UseVisualStyleBackColor = false;
             this.btnMedium.Click += new System.EventHandler(this.btnMedium_Click);
             // 
             // btnHard
             // 
+            this.btnHard.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnHard.Enabled = false;
+            this.btnHard.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnHard.Image = global::HangManV2.Properties.Resources.HardButton;
             this.btnHard.Location = new System.Drawing.Point(761, 516);
             this.btnHard.Margin = new System.Windows.Forms.Padding(2);
             this.btnHard.Name = "btnHard";
             this.btnHard.Size = new System.Drawing.Size(199, 78);
             this.btnHard.TabIndex = 2;
-            this.btnHard.Text = "Harder Daddy";
-            this.btnHard.UseVisualStyleBackColor = true;
+            this.btnHard.UseVisualStyleBackColor = false;
             this.btnHard.Click += new System.EventHandler(this.btnHard_Click);
             // 
             // btnImpossible
             // 
+            this.btnImpossible.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnImpossible.Enabled = false;
+            this.btnImpossible.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnImpossible.Image = global::HangManV2.Properties.Resources.ImpossibleButton;
             this.btnImpossible.Location = new System.Drawing.Point(761, 598);
             this.btnImpossible.Margin = new System.Windows.Forms.Padding(2);
             this.btnImpossible.Name = "btnImpossible";
             this.btnImpossible.Size = new System.Drawing.Size(199, 78);
             this.btnImpossible.TabIndex = 3;
-            this.btnImpossible.Text = "no";
-            this.btnImpossible.UseVisualStyleBackColor = true;
+            this.btnImpossible.UseVisualStyleBackColor = false;
             this.btnImpossible.Click += new System.EventHandler(this.btnImpossible_Click);
             // 
             // btnGoBack

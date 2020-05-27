@@ -311,6 +311,25 @@
       <DependentUpon>HangMan.edmx</DependentUpon>
       <LastGenOutput>HangMan.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\TeamInfoCreateButton.png" />
+    <None Include="Resources\SwitchButton.png" />
+    <None Include="Resources\TeamJoinBackground2.3.png" />
+    <None Include="Resources\Members2.png" />
+    <None Include="Resources\AvgPoints2.png" />
+    <None Include="Resources\AVgPoints.png" />
+    <None Include="Resources\TeamJoinBackground2.2.png" />
+    <None Include="Resources\TeamJoinBackground2.1.png" />
+    <None Include="Resources\TeamJoinBackground.png" />
+    <None Include="Resources\MembersButton.png" />
+    <None Include="Resources\AveragePoints.png" />
+    <None Include="Resources\PointsButton.png" />
+    <None Include="Resources\ImpossibleButton.png" />
+    <None Include="Resources\HardButton.png" />
+    <None Include="Resources\MediumButton.png" />
+    <None Include="Resources\EasyButton.png" />
+    <None Include="Resources\RankingFormBackground4.png" />
+    <None Include="Resources\CreateTeam_CreateButton.png" />
+    <None Include="Resources\CreateTeamBackground.png" />
     <None Include="Resources\RankingBackground.png" />
     <None Include="Resources\RankingFormBackground3.png" />
     <None Include="Resources\wrong5.png" />

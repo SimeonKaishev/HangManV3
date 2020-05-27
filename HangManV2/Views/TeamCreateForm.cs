@@ -30,7 +30,9 @@ namespace HangManV2.Views
 
         private void TeamCreateForm_Load(object sender, EventArgs e)
         {
-
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
         }
         /// <summary>
         /// Returns the user to the previous window
