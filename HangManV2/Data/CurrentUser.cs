@@ -42,16 +42,24 @@ namespace HangManV2.Data
         /// </example>
         private static void UpdateUserInDB()
         {
+            int pointDiff;
             using (var dbcontext = new UserContext())
             {
                 var usr = dbcontext.Users.Find(id);
                 var usrNew = usr;
+                pointDiff = poitAmount - int.Parse(usrNew.PointAmount.ToString());
                 usrNew.PointAmount = poitAmount;
                 dbcontext.Entry(usr).CurrentValues.SetValues(usrNew);
                 dbcontext.SaveChanges();
             }
-
-           
+            using (var dbcontext = new TeamContext())
+            {
+                var team = dbcontext.Teams.Find(teamId);
+                var newTeam = team;
+                newTeam.TeamPointAmount= team.TeamPointAmount + pointDiff;
+                dbcontext.Entry(team).CurrentValues.SetValues(newTeam);
+                dbcontext.SaveChanges();
+            }
         }
         /// <summary>
         /// The method updates the user team in the database
