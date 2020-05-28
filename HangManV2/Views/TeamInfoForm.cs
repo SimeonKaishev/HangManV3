@@ -21,10 +21,10 @@ namespace HangManV2.Views
         {
             InitializeComponent();
             string[] teamInfo = TeamBusiness.GetTeamInfo();
-            lblTeamName.Text += " " + teamInfo[0];
-            lblTeamPoints.Text+=" " + teamInfo[1];
-            lblTeamMembers.Text += " " + teamInfo[2];
-            lblTeamAvgPoints.Text += " " + teamInfo[3];
+            lblTeamName.Text += "  " + teamInfo[0];
+            lblTeamPoints.Text+="  " + teamInfo[1];
+            lblTeamMembers.Text += "  " + teamInfo[2];
+            lblTeamAvgPoints.Text += "  " + teamInfo[3];
             lblPlayerPlace.Text += " " + teamInfo[4]+" in this team";
             List < user > listOfUsers= TeamBusiness.GetAllUsersInTeam();
             foreach (var item in listOfUsers)

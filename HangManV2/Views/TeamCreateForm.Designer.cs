@@ -80,17 +80,19 @@
             this.lblTeamName.Location = new System.Drawing.Point(700, 340);
             this.lblTeamName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTeamName.Name = "lblTeamName";
-            this.lblTeamName.Size = new System.Drawing.Size(66, 13);
+            this.lblTeamName.Size = new System.Drawing.Size(0, 13);
             this.lblTeamName.TabIndex = 0;
-            this.lblTeamName.Text = "Team name:";
             // 
             // lblTeamNameShown
             // 
             this.lblTeamNameShown.AutoSize = true;
-            this.lblTeamNameShown.Location = new System.Drawing.Point(854, 340);
+            this.lblTeamNameShown.BackColor = System.Drawing.Color.Transparent;
+            this.lblTeamNameShown.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTeamNameShown.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblTeamNameShown.Location = new System.Drawing.Point(687, 333);
             this.lblTeamNameShown.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTeamNameShown.Name = "lblTeamNameShown";
-            this.lblTeamNameShown.Size = new System.Drawing.Size(14, 13);
+            this.lblTeamNameShown.Size = new System.Drawing.Size(32, 34);
             this.lblTeamNameShown.TabIndex = 1;
             this.lblTeamNameShown.Text = "A";
             // 
