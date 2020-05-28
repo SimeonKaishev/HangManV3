@@ -29,7 +29,11 @@ namespace HangManV2.Views
         /// </summary>
         private void TeamJoinForm_Load(object sender, EventArgs e)
         {
-            Dictionary<Team, int> TeamsAndNumOfMem = TeamBusiness.GetTeamsAndNumOfMembers();
+            FormBorderStyle = FormBorderStyle.None;
+            WindowState = FormWindowState.Maximized;
+            TopMost = true;
+
+            Dictionary<team, int> TeamsAndNumOfMem = TeamBusiness.GetTeamsAndNumOfMembers();
             foreach (var item in TeamsAndNumOfMem)
             {
                 if(item.Key.TeamPointAmount!=0&&item.Value!= 0)
