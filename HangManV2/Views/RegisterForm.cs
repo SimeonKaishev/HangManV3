@@ -235,10 +235,14 @@ namespace HangManV2.Views
                     if (this.username.Length > 0)
                     {
                         this.username = this.username.Substring(0, username.Length - 1);
+                        label1.Visible = true;
+                        label2.Visible = false;
                         //lblUserNameShown.Text = username;
                     }
                     break;
                 case "pass":
+                    label1.Visible = false;
+                    label2.Visible = true;
                     if (this.pass.Length > 0)
                     {
                         this.hiddenPass = this.hiddenPass.Substring(0, hiddenPass.Length - 1);

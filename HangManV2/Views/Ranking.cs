@@ -41,26 +41,37 @@ namespace HangManV2.Views
                 switch(item.Username.Length)
                 {
                     case 1: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "               ->        " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 2: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "             ->        " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 3: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "            ->       " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 4: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "        ->        " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 5: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "       ->        " + item.PointAmount + " pts");
+                        counter++;
                         break;
-                    case 6: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "      ->        " + item.PointAmount + " pts");
+                    case 6: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "       ->        " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 7: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "    ->        " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 8: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "   ->       " + item.PointAmount + " pts");
+                        counter++;
                         break;
-                    case 9: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + " ->      " + item.PointAmount + " pts");
+                    case 9: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "  ->      " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     case 10: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "->     " + item.PointAmount + " pts");
+                        counter++;
                         break;
                     default: lBoxRanking.Items.Add(" #" + counter.ToString() + " " + item.Username + "  ->     " + item.PointAmount + " pts");
+                        counter++;
                         break;
                 }
                
@@ -73,8 +84,53 @@ namespace HangManV2.Views
             {
                 if (item.TeamId != 1)
                 {
-                    lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "      ->      " + item.TeamPointAmount + " pts");
-                    counter2++;
+                    switch (item.TeamName.Length)
+                    {
+                        case 1:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "               ->        " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 2:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "             ->        " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 3:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "            ->       " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 4:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "        ->        " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 5:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "       ->        " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 6:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "       ->        " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 7:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "    ->        " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 8:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "   ->       " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 9:
+                            lBoxRanking.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "  ->      " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        case 10:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "->     " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                        default:
+                            lbTeamsShow.Items.Add(" #" + counter2.ToString() + " " + item.TeamName + "  ->     " + item.TeamPointAmount + " pts");
+                            counter2++;
+                            break;
+                    }
                 }
             }
    
