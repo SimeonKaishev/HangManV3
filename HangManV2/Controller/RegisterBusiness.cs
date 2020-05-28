@@ -185,6 +185,7 @@ namespace HangManV2.Context
                 CurrentUser.id = usr.Id;
                 CurrentUser.username = usr.Username;
                 CurrentUser.poitAmount = int.Parse(usr.PointAmount.ToString());
+                CurrentUser.teamId = 1;
             }
 
         }

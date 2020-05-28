@@ -89,7 +89,10 @@ namespace HangManV2.Data
             {
                 var oldTeam = dbcontext.Teams.Find(teamId);
                 var oldTeamUpdatedpoints = oldTeam;
-                oldTeamUpdatedpoints.TeamPointAmount -= poitAmount;
+                if (oldTeam.TeamId != 1)
+                {
+                    oldTeamUpdatedpoints.TeamPointAmount -= poitAmount;
+                }
                 dbcontext.Entry(oldTeam).CurrentValues.SetValues(oldTeamUpdatedpoints);
                 var newTeam = dbcontext.Teams.Find(newTeamID);
                 var newTeamUp = newTeam;
@@ -112,6 +115,7 @@ namespace HangManV2.Data
             id = 0;
             username = null;
             poitAmount = 0;
+            teamId = 1;
         }
     }
 }
