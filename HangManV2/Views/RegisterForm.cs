@@ -425,22 +425,33 @@ namespace HangManV2.Views
         /// </summary>
         private void btnBack_Click(object sender, EventArgs e)
         {
-            usedLabel = "username";
-            btnBack.Enabled = false;
-            btnNext.Enabled = true;
-            lblPassPoint.Visible = false;
-            lblUsrPoint.Visible = true;
+            SwitchImputPlace();
         }
         /// <summary>
         /// The method the used label to the one used for the password
         /// </summary>
         private void btnNext_Click(object sender, EventArgs e)
         {
-            usedLabel = "pass";
-            btnBack.Enabled = true;
-            btnNext.Enabled = false;
-            lblPassPoint.Visible = true;
-            lblUsrPoint.Visible = false;
+            SwitchImputPlace();
+        }
+        public void SwitchImputPlace()
+        {
+            if (usedLabel == "username")
+            {
+                usedLabel = "pass";
+                btnBack.Enabled = true;
+                btnNext.Enabled = false;
+                lblPassPoint.Visible = true;
+                lblUsrPoint.Visible = false;
+            }
+            else
+            {
+                usedLabel = "username";
+                btnBack.Enabled = false;
+                btnNext.Enabled = true;
+                lblPassPoint.Visible = false;
+                lblUsrPoint.Visible = true;
+            }
         }
         public void btn1_Click(object sender, EventArgs e)
         {
