@@ -78,7 +78,7 @@ namespace HangManV2.Context
         /// </exception>
         public static void LogIn(string imputName, string imputPass)
         {
-            using (var dbcontext = new hangmanEntities())
+            using (var dbcontext = new UserContext())
             {
                 user usr = new user();
                 try

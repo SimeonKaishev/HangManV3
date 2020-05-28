@@ -12,7 +12,7 @@ namespace HangmanTesting
         [TestMethod]
         public void TestGetTopPlayersListDoesntFuckingShitItselfAndDieWhenCalled()
         {
-            HangManV2.Context.RankingContext.GetTopPlayersList();
+            HangManV2.Context.RankingController.GetTopPlayersList();
         }
         // static List<user> listOfUsers = new List<user>();
         [TestMethod]
@@ -21,7 +21,7 @@ namespace HangmanTesting
             List<user> ListOfUsers = new List<user>();
             user usr = new user();
             usr.Id = 1;
-           Assert.AreEqual(1, HangManV2.Context.RankingContext.GetPlayerPosInList(ListOfUsers,0));
+           Assert.AreEqual(1, HangManV2.Context.RankingController.GetPlayerPosInList(ListOfUsers,0));
         }
 
     }

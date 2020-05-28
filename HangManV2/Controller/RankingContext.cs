@@ -12,7 +12,7 @@ namespace HangManV2.Context
     /// This class handles oprations connected with ranking
     /// </summary>
      /// <param name="topUsers">A list of users.</param>
-    public static class RankingContext
+    public static class RankingController
     {
         private static List<user> topUsers=new List<user>();
         /// <summary>

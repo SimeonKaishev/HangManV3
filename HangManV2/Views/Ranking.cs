@@ -33,8 +33,8 @@ namespace HangManV2.Views
             WindowState = FormWindowState.Maximized;
             TopMost = true;
 
-            RankingContext.Refresh();
-            List<user> topPlayers = RankingContext.GetTopPlayersList();
+            RankingController.Refresh();
+            List<user> topPlayers = RankingController.GetTopPlayersList();
             int counter = 1;
             foreach (var item in topPlayers)
             {
@@ -65,7 +65,7 @@ namespace HangManV2.Views
                 }
                
             }
-            int place = RankingContext.GetPlayerPosition();
+            int place = RankingController.GetPlayerPosition();
             lblShowPlace.Text = "You are number " + place.ToString()+" in the univerce";
             List<team> teams = TeamBusiness.GetListOfTeams();
             int counter2 = 1;

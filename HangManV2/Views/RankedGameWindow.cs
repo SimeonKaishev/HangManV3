@@ -49,7 +49,7 @@ namespace HangManV2.Views
             {
                 CurrentUser.UpdatePoitAmount(points);
                 string message2 = "You win " + points.ToString()+" poits! "+
-                    "You are currently in place "+RankingContext.GetPlayerPosition()+" overall"
+                    "You are currently in place "+RankingController.GetPlayerPosition()+" overall"
                     ;
                 string caption2 = "Success!";
                 MessageBoxButtons buttons2 = MessageBoxButtons.OK;
@@ -64,7 +64,7 @@ namespace HangManV2.Views
         {
             if (gamePlayBusiness.Mistakes == 9)
             {
-                string message2 = "You lose! "+ "You are currently in place " + RankingContext.GetPlayerPosition() + " overall";
+                string message2 = "You lose! "+ "You are currently in place " + RankingController.GetPlayerPosition() + " overall";
                 string caption2 = "Opposite of success!";
                 MessageBoxButtons buttons2 = MessageBoxButtons.OK;
                 MessageBox.Show(message2, caption2, buttons2);

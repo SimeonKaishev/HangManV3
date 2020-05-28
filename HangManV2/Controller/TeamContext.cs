@@ -143,7 +143,9 @@ namespace HangManV2.Context
         {
             using (var dbcontext = new TeamContext())
             {
-                var listOfAllTeams = (from t in dbcontext.Teams orderby t.TeamPointAmount descending select t).ToList();
+                var listOfAllTeams = (from t in dbcontext.Teams 
+                                      orderby t.TeamPointAmount 
+                                      descending select t).ToList();
                 return listOfAllTeams;
             }
         }

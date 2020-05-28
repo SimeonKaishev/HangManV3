@@ -5,9 +5,9 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="03f4f13c73a544b7a237ebe4fcd753a4" Name="Diagram1">
-        <EntityTypeShape EntityType="hangmanModel.team" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="hangmanModel.user" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="hangmanModel.word" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hangmanModel.team" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="hangmanModel.user" Width="1.5" PointX="3.125" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="hangmanModel.word" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
         <AssociationConnector Association="hangmanModel.users_ibfk_1" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
