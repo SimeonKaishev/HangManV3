@@ -18,8 +18,8 @@ namespace HangmanTesting
         [TestMethod]
         public void TestGetPlayerPosInListReturnsCorrectPosition()
         {
-            List<User> ListOfUsers = new List<User>();
-            User usr = new User();
+            List<user> ListOfUsers = new List<user>();
+            user usr = new user();
             usr.Id = 1;
            Assert.AreEqual(1, HangManV2.Context.RankingController.GetPlayerPosInList(ListOfUsers,0));
         }

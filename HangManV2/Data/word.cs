@@ -12,7 +12,7 @@ namespace HangManV2.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class Word
+    public partial class word
     {
         public int Id { get; set; }
         public string Word1 { get; set; }

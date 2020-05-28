@@ -175,21 +175,21 @@
       <FileName>Data\HangMan.Context.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HangManV2.Data.Team" Collapsed="true">
+  <Class Name="HangManV2.Data.team" Collapsed="true">
     <Position X="5.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>IAAAAAAABAAAAAAAAAAAAAADAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Data\team.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HangManV2.Data.User" Collapsed="true">
+  <Class Name="HangManV2.Data.user" Collapsed="true">
     <Position X="8.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAQAAAAACAgAQAAACAAAAAAAAAAA=</HashCode>
       <FileName>Data\user.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="HangManV2.Data.Word" Collapsed="true">
+  <Class Name="HangManV2.Data.word" Collapsed="true">
     <Position X="7" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAQAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
@@ -220,7 +220,7 @@
   <Class Name="HangManV2.Properties.Resources" Collapsed="true">
     <Position X="15.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>wCAJNmolBAAkmy4CCQHrHYZYQQAMDwMY6ItaAQJcF4A=</HashCode>
+      <HashCode>wCgJNmslBGAkmy4CCQHrHYZYQUgOPwMY6ItaQQJcF4A=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="HangManV2.Properties.Settings" Collapsed="true">

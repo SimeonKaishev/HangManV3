@@ -18,6 +18,6 @@ namespace HangManV2.Data
         {
 
         }
-        public DbSet<Word> Words { get; set; }
+        public DbSet<word> Words { get; set; }
     }
 }

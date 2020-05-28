@@ -12,7 +12,7 @@ namespace HangManV2.Data
     using System;
     using System.Collections.Generic;
     
-    public partial class User
+    public partial class user
     {
         public int Id { get; set; }
         public Nullable<int> TeamId { get; set; }
@@ -20,6 +20,6 @@ namespace HangManV2.Data
         public string Password { get; set; }
         public Nullable<int> PointAmount { get; set; }
     
-        public virtual Team team { get; set; }
+        public virtual team team { get; set; }
     }
 }

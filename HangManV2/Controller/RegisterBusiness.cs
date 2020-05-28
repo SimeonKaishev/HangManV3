@@ -175,7 +175,7 @@ namespace HangManV2.Context
             }
             using (var dbcontext = new UserContext())
             {
-                User usr = new User();
+                user usr = new user();
                 usr.Username = imputUsername;
                 usr.Password = Hasher.GetHash(imputPass);
                 usr.TeamId = 1;

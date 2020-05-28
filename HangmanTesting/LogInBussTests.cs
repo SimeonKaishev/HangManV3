@@ -12,14 +12,14 @@ namespace HangmanTesting
         [TestMethod]
         public void TestCheckIfUsrListEmptyThrowsUserDoesntExistExeption()
         {
-            List<User> ListOfIUsers = new List<User>();
+            List<user> ListOfIUsers = new List<user>();
             Assert.ThrowsException<HangManV2.Commons.UserDoesntExistExeption>(() => HangManV2.Context.LoginBusiness.CheckIfUsrListEmpty(ListOfIUsers));
         }
         [TestMethod]
         public void TestCheckIfUsrListEmptyDoesntThrowUserDoesntExistExeption()
         {
-            List<User> ListOfIUsers = new List<User>();
-             User usr = new User();
+            List<user> ListOfIUsers = new List<user>();
+             user usr = new user();
              ListOfIUsers.Add(usr);
             HangManV2.Context.LoginBusiness.CheckIfUsrListEmpty(ListOfIUsers);
         }

@@ -93,7 +93,7 @@ namespace HangManV2.Commons
         /// </example>
         /// <exception cref="HangManV2.Commons.IncorrectPassExeption">Thrown when the hashed values of the passwords don't match
         /// </exception>
-        public static void CheckPass(User usr,string imputPass)
+        public static void CheckPass(user usr,string imputPass)
         {
             byte[] hashbytes = Convert.FromBase64String(usr.Password);
             byte[] saltExtracted = new byte[16];

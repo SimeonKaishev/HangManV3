@@ -45,7 +45,7 @@ namespace HangManV2.Context
              difficulty = DetermineWordDifficulty(word);
             using (var dbcontext = new WordContext())
             {
-                Word newWord = new Data.Word();
+                word newWord = new Data.word();
                 newWord.Word1 = word;
                 newWord.Difficulty = difficulty;
                 dbcontext.Words.Add(newWord);
