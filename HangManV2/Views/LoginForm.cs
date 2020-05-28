@@ -334,6 +334,8 @@ namespace HangManV2.Views
                 btnNext.Enabled = false;
                 lblPassPoint.Visible = true;
                 lblUsrPoint.Visible = false;
+                label2.Visible = false;
+                label3.Visible = true;
             }
             else
             {
@@ -342,6 +344,8 @@ namespace HangManV2.Views
                 btnNext.Enabled = true;
                 lblPassPoint.Visible = false;
                 lblUsrPoint.Visible = true;
+                label2.Visible = true;
+                label3.Visible = false;
             }
         }
         public void btn1_Click(object sender, EventArgs e)
