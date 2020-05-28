@@ -61,7 +61,7 @@
             this.lblTeamPoints.BackColor = System.Drawing.Color.Transparent;
             this.lblTeamPoints.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeamPoints.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
-            this.lblTeamPoints.Location = new System.Drawing.Point(140, 276);
+            this.lblTeamPoints.Location = new System.Drawing.Point(140, 318);
             this.lblTeamPoints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTeamPoints.Name = "lblTeamPoints";
             this.lblTeamPoints.Size = new System.Drawing.Size(250, 34);
@@ -74,7 +74,7 @@
             this.lblTeamMembers.BackColor = System.Drawing.Color.Transparent;
             this.lblTeamMembers.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeamMembers.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
-            this.lblTeamMembers.Location = new System.Drawing.Point(140, 308);
+            this.lblTeamMembers.Location = new System.Drawing.Point(140, 400);
             this.lblTeamMembers.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTeamMembers.Name = "lblTeamMembers";
             this.lblTeamMembers.Size = new System.Drawing.Size(361, 34);
@@ -87,7 +87,7 @@
             this.lblTeamAvgPoints.BackColor = System.Drawing.Color.Transparent;
             this.lblTeamAvgPoints.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTeamAvgPoints.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
-            this.lblTeamAvgPoints.Location = new System.Drawing.Point(140, 339);
+            this.lblTeamAvgPoints.Location = new System.Drawing.Point(140, 490);
             this.lblTeamAvgPoints.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblTeamAvgPoints.Name = "lblTeamAvgPoints";
             this.lblTeamAvgPoints.Size = new System.Drawing.Size(291, 34);
@@ -100,7 +100,7 @@
             this.lblPlayerPlace.BackColor = System.Drawing.Color.Transparent;
             this.lblPlayerPlace.Font = new System.Drawing.Font("Microsoft Tai Le", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayerPlace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
-            this.lblPlayerPlace.Location = new System.Drawing.Point(140, 376);
+            this.lblPlayerPlace.Location = new System.Drawing.Point(140, 585);
             this.lblPlayerPlace.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPlayerPlace.Name = "lblPlayerPlace";
             this.lblPlayerPlace.Size = new System.Drawing.Size(218, 34);
@@ -114,7 +114,7 @@
             this.btnCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.Image = global::HangManV2.Properties.Resources.TeamInfoCreateButton;
             this.btnCreate.Location = new System.Drawing.Point(913, 675);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(2);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(115, 45);
             this.btnCreate.TabIndex = 7;
@@ -130,7 +130,7 @@
             this.Points});
             this.dgUsersInTeam.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
             this.dgUsersInTeam.Location = new System.Drawing.Point(663, 242);
-            this.dgUsersInTeam.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgUsersInTeam.Margin = new System.Windows.Forms.Padding(2);
             this.dgUsersInTeam.Name = "dgUsersInTeam";
             this.dgUsersInTeam.RowHeadersWidth = 62;
             this.dgUsersInTeam.RowTemplate.Height = 28;
@@ -196,7 +196,7 @@
             this.Controls.Add(this.lblTeamMembers);
             this.Controls.Add(this.lblTeamPoints);
             this.Controls.Add(this.lblTeamName);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TeamInfoForm";
             this.Text = "TeamInfoForm";
             this.Load += new System.EventHandler(this.TeamInfoForm_Load);
