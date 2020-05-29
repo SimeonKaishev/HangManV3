@@ -36,7 +36,7 @@ namespace HangManV2.Views
             Dictionary<team, int> TeamsAndNumOfMem = TeamBusiness.GetTeamsAndNumOfMembers();
             foreach (var item in TeamsAndNumOfMem)
             {
-                if(item.Key.TeamPointAmount!=0&&item.Value!= 0)
+                if(item.Key.TeamPointAmount!=0&&item.Key.TeamId!= 1)
                 dgTeamsShow.Rows.Add(item.Key.TeamName, item.Key.TeamPointAmount, item.Value, item.Key.TeamPointAmount / item.Value);
             }
             dgTeamsShow.Sort(Column2,ListSortDirection.Descending);

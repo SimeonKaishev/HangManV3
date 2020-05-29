@@ -44,6 +44,10 @@
             // 
             // dgTeamsShow
             // 
+            this.dgTeamsShow.AllowUserToAddRows = false;
+            this.dgTeamsShow.AllowUserToDeleteRows = false;
+            this.dgTeamsShow.AllowUserToResizeColumns = false;
+            this.dgTeamsShow.AllowUserToResizeRows = false;
             this.dgTeamsShow.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
             this.dgTeamsShow.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgTeamsShow.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -52,14 +56,15 @@
             this.Column3,
             this.Column4});
             this.dgTeamsShow.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(212)))), ((int)(((byte)(169)))), ((int)(((byte)(110)))));
-            this.dgTeamsShow.Location = new System.Drawing.Point(471, 85);
-            this.dgTeamsShow.Margin = new System.Windows.Forms.Padding(2);
+            this.dgTeamsShow.Location = new System.Drawing.Point(628, 105);
+            this.dgTeamsShow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgTeamsShow.Name = "dgTeamsShow";
+            this.dgTeamsShow.ReadOnly = true;
             this.dgTeamsShow.RowHeadersWidth = 62;
             this.dgTeamsShow.RowTemplate.Height = 28;
             this.dgTeamsShow.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.dgTeamsShow.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgTeamsShow.Size = new System.Drawing.Size(665, 564);
+            this.dgTeamsShow.Size = new System.Drawing.Size(887, 694);
             this.dgTeamsShow.TabIndex = 0;
             // 
             // column1
@@ -95,10 +100,10 @@
             this.btnJoin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnJoin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnJoin.Image = global::HangManV2.Properties.Resources.NoTeamJoinButton;
-            this.btnJoin.Location = new System.Drawing.Point(1177, 524);
-            this.btnJoin.Margin = new System.Windows.Forms.Padding(2);
+            this.btnJoin.Location = new System.Drawing.Point(1569, 645);
+            this.btnJoin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnJoin.Name = "btnJoin";
-            this.btnJoin.Size = new System.Drawing.Size(114, 64);
+            this.btnJoin.Size = new System.Drawing.Size(152, 79);
             this.btnJoin.TabIndex = 1;
             this.btnJoin.UseVisualStyleBackColor = false;
             this.btnJoin.Click += new System.EventHandler(this.btnJoin_Click);
@@ -107,10 +112,9 @@
             // 
             this.lblSortBy.AutoSize = true;
             this.lblSortBy.BackColor = System.Drawing.Color.Yellow;
-            this.lblSortBy.Location = new System.Drawing.Point(487, 672);
-            this.lblSortBy.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblSortBy.Location = new System.Drawing.Point(649, 827);
             this.lblSortBy.Name = "lblSortBy";
-            this.lblSortBy.Size = new System.Drawing.Size(0, 13);
+            this.lblSortBy.Size = new System.Drawing.Size(0, 17);
             this.lblSortBy.TabIndex = 2;
             // 
             // btnPointsSort
@@ -118,10 +122,10 @@
             this.btnPointsSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnPointsSort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPointsSort.Image = global::HangManV2.Properties.Resources.PointsButton;
-            this.btnPointsSort.Location = new System.Drawing.Point(663, 738);
-            this.btnPointsSort.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPointsSort.Location = new System.Drawing.Point(884, 908);
+            this.btnPointsSort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnPointsSort.Name = "btnPointsSort";
-            this.btnPointsSort.Size = new System.Drawing.Size(100, 50);
+            this.btnPointsSort.Size = new System.Drawing.Size(133, 62);
             this.btnPointsSort.TabIndex = 3;
             this.btnPointsSort.UseVisualStyleBackColor = false;
             this.btnPointsSort.Click += new System.EventHandler(this.btnPointsSort_Click);
@@ -131,10 +135,10 @@
             this.btnAvgPointsSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnAvgPointsSort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAvgPointsSort.Image = global::HangManV2.Properties.Resources.AvgPoints2;
-            this.btnAvgPointsSort.Location = new System.Drawing.Point(783, 738);
-            this.btnAvgPointsSort.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAvgPointsSort.Location = new System.Drawing.Point(1044, 908);
+            this.btnAvgPointsSort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAvgPointsSort.Name = "btnAvgPointsSort";
-            this.btnAvgPointsSort.Size = new System.Drawing.Size(160, 50);
+            this.btnAvgPointsSort.Size = new System.Drawing.Size(213, 62);
             this.btnAvgPointsSort.TabIndex = 4;
             this.btnAvgPointsSort.UseVisualStyleBackColor = false;
             this.btnAvgPointsSort.Click += new System.EventHandler(this.btnAvgPointsSort_Click);
@@ -144,10 +148,10 @@
             this.btnMembersSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnMembersSort.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnMembersSort.Image = global::HangManV2.Properties.Resources.Members2;
-            this.btnMembersSort.Location = new System.Drawing.Point(966, 738);
-            this.btnMembersSort.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMembersSort.Location = new System.Drawing.Point(1288, 908);
+            this.btnMembersSort.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnMembersSort.Name = "btnMembersSort";
-            this.btnMembersSort.Size = new System.Drawing.Size(144, 50);
+            this.btnMembersSort.Size = new System.Drawing.Size(192, 62);
             this.btnMembersSort.TabIndex = 5;
             this.btnMembersSort.UseVisualStyleBackColor = false;
             this.btnMembersSort.Click += new System.EventHandler(this.btnMembersSort_Click);
@@ -158,20 +162,20 @@
             this.btnGoBack.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnGoBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGoBack.Image = global::HangManV2.Properties.Resources.BackArrow;
-            this.btnGoBack.Location = new System.Drawing.Point(34, 32);
-            this.btnGoBack.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGoBack.Location = new System.Drawing.Point(45, 39);
+            this.btnGoBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGoBack.Name = "btnGoBack";
-            this.btnGoBack.Size = new System.Drawing.Size(45, 45);
+            this.btnGoBack.Size = new System.Drawing.Size(60, 55);
             this.btnGoBack.TabIndex = 6;
             this.btnGoBack.UseVisualStyleBackColor = false;
             this.btnGoBack.Click += new System.EventHandler(this.btnGoBack_Click);
             // 
             // TeamJoinForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::HangManV2.Properties.Resources.TeamJoinBackground2_3;
-            this.ClientSize = new System.Drawing.Size(1604, 881);
+            this.ClientSize = new System.Drawing.Size(2139, 1084);
             this.Controls.Add(this.btnGoBack);
             this.Controls.Add(this.btnMembersSort);
             this.Controls.Add(this.btnAvgPointsSort);
@@ -179,7 +183,7 @@
             this.Controls.Add(this.lblSortBy);
             this.Controls.Add(this.btnJoin);
             this.Controls.Add(this.dgTeamsShow);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "TeamJoinForm";
             this.Text = "TeamJoinForm";
             this.Load += new System.EventHandler(this.TeamJoinForm_Load);
