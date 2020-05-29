@@ -149,6 +149,10 @@ namespace HangManV2.Context
             {
                 throw new UsernameNullExeption();
             }
+            if(imputUsername.Length>10)
+            {
+                throw new InvalidOperationException();
+            }
             try
             {
                 CheckIfUserNameExists(imputUsername);

@@ -118,7 +118,7 @@ namespace HangManV2.Views
         /// </summary>
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            
+
             try
             {
                 RegisterBusiness.RegisterUser(username, pass);
@@ -163,6 +163,13 @@ namespace HangManV2.Views
             catch (UsernameNullExeption)
             {
                 string message = "Username can't be empty!";
+                string caption = "Error!";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBox.Show(message, caption, buttons);
+            }
+            catch (InvalidOperationException)
+            {
+                string message = "Username can't be over 10 characters!";
                 string caption = "Error!";
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, buttons);
