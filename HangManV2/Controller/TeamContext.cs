@@ -75,19 +75,23 @@ namespace HangManV2.Context
         /// </exception>
         /// <exception cref="HangManV2.Commons.TeamNameNullExeption">Thrown when the inserted team name is null
         /// </exception>
-        public static void CreateTeam(string ImputTeamName)
+        public static void CreateTeam(string imputTeamName)
         {
             try
             {
-                CheckIfTeamNameNull(ImputTeamName);
+                CheckIfTeamNameNull(imputTeamName);
             }
             catch (TeamNameNullExeption)
             {
                 throw new TeamNameNullExeption();
             }
+            if (imputTeamName.Length > 10)
+            {
+                throw new InvalidOperationException();
+            }
             try
             {
-                CheckIfTeamExists(ImputTeamName);
+                CheckIfTeamExists(imputTeamName);
             }
             catch (TeamAlreadyExistsExeption)
             {
@@ -97,7 +101,7 @@ namespace HangManV2.Context
             {
                 RemovePointsFromOldTeam();
                 team newTeam = new team();
-                newTeam.TeamName = ImputTeamName;
+                newTeam.TeamName = imputTeamName;
                 newTeam.TeamPointAmount = CurrentUser.poitAmount;
                 dbcontext.Teams.Add(newTeam);
                 dbcontext.SaveChanges();

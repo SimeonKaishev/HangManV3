@@ -439,11 +439,6 @@ namespace HangManV2.Views
                     ButtonClicked('0');
                     break;
             }
-            if (imput == "Space")
-            {
-                ButtonClicked('_');
-            }
-            else
             if (imput == "Back")
             {
                 Backspace();

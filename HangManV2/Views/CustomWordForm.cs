@@ -263,11 +263,6 @@ namespace HangManV2.Views
         }
         public void RecognizeKeyBoard(string imput)
         {
-            if (imput == "Space")
-            {
-                ButtonClicked('_');
-            }
-            else
             if (imput == "Back")
             {
                 Backspace();

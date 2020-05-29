@@ -87,6 +87,13 @@ namespace HangManV2.Views
                 MessageBoxButtons buttons = MessageBoxButtons.OK;
                 MessageBox.Show(message, caption, buttons);
             }
+            catch (InvalidOperationException)
+            {
+                string message = "Team name cannot be over 10 characters!";
+                string caption = "Error!";
+                MessageBoxButtons buttons = MessageBoxButtons.OK;
+                MessageBox.Show(message, caption, buttons);
+            }
         }
         /// <summary>
         /// The method adds the chosen char to the selected label
@@ -163,11 +170,6 @@ namespace HangManV2.Views
                     ButtonClicked('0');
                     break;
             }
-            if (imput == "Space")
-            {
-                ButtonClicked('_');
-            }
-            else
             if (imput == "Back")
             {
                 Backspace();
